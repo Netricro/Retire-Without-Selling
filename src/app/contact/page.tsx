@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Contact | Retire Without Selling',
-  description: 'Get in touch. Book a discovery call. Or just ask a question. No pitch, no pressure. Just a conversation about where you are and what options exist.',
+  description: 'Get in touch. Book a discovery call. Or just ask a question. No pitch, no pressure.',
 };
 
 export default function Contact() {
@@ -21,7 +21,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
           <div className="glass rounded-xl p-8">
             <h2 className="text-xl text-white mb-4">Book a Discovery Call</h2>
-            <p className="mb-6 text-[#94a3b8]">
+            <p className="mb-6">
               30 minutes. We listen to your situation, explain the options, and see if there is a fit. No obligation either way.
             </p>
             <a
@@ -34,7 +34,7 @@ export default function Contact() {
           
           <div className="glass rounded-xl p-8">
             <h2 className="text-xl text-white mb-4">Email Us</h2>
-            <p className="mb-6 text-[#94a3b8]">
+            <p className="mb-6">
               Prefer to write? Send us an email. We read every one and respond within 24 hours.
             </p>
             <a
@@ -53,44 +53,24 @@ export default function Contact() {
               <div className="text-[#3A7BFF] font-serif text-2xl shrink-0">1</div>
               <div>
                 <h3 className="text-white font-semibold mb-1">You Reach Out</h3>
-                <p className="text-[#94a3b8]">Email, book a call, or take the free assessment. Whatever feels right.</p>
+                <p className="text-[#94a3b8]">Email or take the free assessment. Whatever feels right.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="text-[#3A7BFF] font-serif text-2xl shrink-0">2</div>
               <div>
                 <h3 className="text-white font-semibold mb-1">We Have a Conversation</h3>
-                <p className="text-[#94a3b8]">We listen to your situation, understand your goals, and assess whether there is a fit.</p>
+                <p className="text-[#94a3b8]">We listen to your situation and see if there is a fit.</p>
               </div>
             </div>
             <div className="flex gap-4">
               <div className="text-[#3A7BFF] font-serif text-2xl shrink-0">3</div>
-              <div>
-                <h3 className="text-white font-semibold mb-1">We Build a Plan</h3>
-                <p className="text-[#94a3b8]">If there is a fit, we create a clear plan for stabilising, systemising, and scaling your business.</p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="text-[#3A7BFF] font-serif text-2xl shrink-0">4</div>
               <div>
                 <h3 className="text-white font-semibold mb-1">You Decide</h3>
                 <p className="text-[#94a3b8]">No pressure. No hard sell. You decide if and when to move forward.</p>
               </div>
             </div>
           </div>
-        </div>
-        
-        <div className="border-t border-[#1e293b] pt-12">
-          <h2 className="text-2xl text-white mb-4">Not Ready to Talk?</h2>
-          <p className="mb-6">
-            That's fine. Take the free assessment first. It takes 5 minutes and gives you a clear picture of where you stand. No obligation, no follow-up unless you want it.
-          </p>
-          <a
-            href="https://regenovate.com/bsa"
-            className="inline-flex items-center justify-center px-8 py-4 bg-[#3A7BFF] text-white font-semibold rounded-lg hover:bg-[#2563eb] transition-all"
-          >
-            Take The Free Assessment
-          </a>
         </div>
       </div>
     </div>
