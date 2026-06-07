@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { DM_Serif_Display, Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const dmSerif = DM_Serif_Display({
   weight: "400",
@@ -45,7 +47,11 @@ export default function RootLayout({
       lang="en"
       className={`${dmSerif.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#0B0F1A] text-white">{children}</body>
+      <body className="min-h-full flex flex-col bg-[#0B0F1A] text-white pt-16">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
