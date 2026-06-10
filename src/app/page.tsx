@@ -51,16 +51,16 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="animate-fade-in-up animation-delay-100">
-              <div className="number-stat">95%</div>
-              <p className="text-[#94a3b8] mt-4 text-lg">of businesses never sell</p>
+              <div className="number-stat">75%</div>
+              <p className="text-[#94a3b8] mt-4 text-lg">drop in income after selling their business</p>
             </div>
             <div className="animate-fade-in-up animation-delay-200">
-              <div className="number-stat">96%</div>
-              <p className="text-[#94a3b8] mt-4 text-lg">sell for 20-30% of true value</p>
+              <div className="number-stat">95%</div>
+              <p className="text-[#94a3b8] mt-4 text-lg">of businesses don't sell and are simply closed down</p>
             </div>
             <div className="animate-fade-in-up animation-delay-300">
-              <div className="number-stat">2M</div>
-              <p className="text-[#94a3b8] mt-4 text-lg">UK owners retiring, &lt;1,000 buyers</p>
+              <div className="number-stat">76%</div>
+              <p className="text-[#94a3b8] mt-4 text-lg">of business sellers deeply regret selling</p>
             </div>
           </div>
         </div>
