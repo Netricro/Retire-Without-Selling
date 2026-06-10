@@ -17,11 +17,11 @@ export default function TheProblem() {
       
       <div className="space-y-8 text-lg text-[#94a3b8] leading-relaxed">
         <p className="text-2xl text-white font-light">
-          The difference between what your business is worth and what you need to retire.
+          The difference between your Business Earnings NOW and Your Investment Income after selling.
         </p>
         
         <p>
-          For most UK business owners over 55, it is £1 million or more. And they do not discover it until they try to sell.
+          For most UK business owners over 55, this gap is £1 million or more. And they do not discover it until they try to sell.
         </p>
         
         <div className="glass rounded-xl p-8 my-12 border border-[#3A7BFF]/30">

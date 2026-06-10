@@ -85,7 +85,7 @@ export default function Home() {
             The Retirement Value Gap
           </h2>
           <p className="text-xl text-[#94a3b8] mb-8 max-w-3xl mx-auto leading-relaxed">
-            The difference between what your business is worth and what you need to retire. For most UK business owners over 55, it is £1 million or more. And they do not discover it until they try to sell.
+            The difference between your Business Earnings NOW and Your Investment Income after selling.
           </p>
           <Link
             href="/the-problem"
