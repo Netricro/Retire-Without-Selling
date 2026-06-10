@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'The Solution | Retire Without Selling',
-  description: 'Partnering for equity: keep ownership, build value, step back. A better path than selling for a fraction today.',
+  title: 'The Solution | Build a Business That Runs Without You',
+  description: 'Build a business that runs without you, so you can step away, keep your equity, and continue receiving income throughout retirement.',
 };
 
 export default function TheSolution() {
@@ -12,16 +12,19 @@ export default function TheSolution() {
         The Solution
       </p>
       <h1 className="text-4xl md:text-6xl mb-8 leading-tight">
-        Partner for Equity.<br />Build Value. Step Back.
+        Build a Business That<br />Runs Without You
       </h1>
       
       <div className="space-y-8 text-lg text-[#94a3b8] leading-relaxed">
         <p className="text-2xl text-white font-light">
-          Instead of selling for a low multiple today, partner with us to grow your business to its true value.
+          Step away, keep your equity, and continue receiving income throughout retirement.
         </p>
         
         <p>
-          You keep ownership. We bring the systems, the team, and the expertise. When the business runs without you, everyone wins.
+          Most business owners think the only way to retire is to sell. But selling often means accepting a fraction of what your business is worth, losing future income, and walking away from something you spent decades building.
+        </p>
+        <p>
+          There is a better way. Partner with us to build a business that runs without you, so you can step away, keep your equity, and continue receiving income throughout retirement. You keep ownership. We bring the systems, the team, and the expertise. When the business no longer depends on you, everyone wins.
         </p>
         
         <div className="glass rounded-xl p-8 my-12 border border-[#3A7BFF]/30">
@@ -92,7 +95,7 @@ export default function TheSolution() {
         </div>
         
         <p>
-          The question is not "how do I sell my business?" The question is "how do I retire on what my business is worth?" Selling is one answer. Building value and keeping ownership is another. For most owners, it is the better answer.
+          The question is not "how do I sell my business?" The question is "how do I build a business that runs without me, so I can step away, keep my equity, and continue receiving income throughout retirement?"
         </p>
         
         <div className="flex flex-col items-center gap-6 my-16">

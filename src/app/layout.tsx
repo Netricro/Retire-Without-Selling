@@ -19,7 +19,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Retire Without Selling | Build to Retire",
-  description: "Most UK business owners over 55 will never retire on what their business is worth. There is a better way. Partner for equity. Build value. Step back. Keep ownership.",
+  description: "Build a business that runs without you, so you can step away, keep your equity, and continue receiving income throughout retirement. Partner for equity. Build value. Step back.",
   metadataBase: new URL("https://retirewithoutselling.com"),
   openGraph: {
     title: "Retire Without Selling Your Business",

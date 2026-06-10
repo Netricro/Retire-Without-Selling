@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Retire Without Selling Your Business | Build to Retire',
-  description: 'Most UK business owners over 55 will never retire on what their business is worth. 95% never sell. 96% sell for a fraction. There is a better way: partner for equity, build value, step back, keep ownership.',
+  title: 'Build a Business That Runs Without You | Retire Without Selling',
+  description: 'Build a business that runs without you, so you can step away, keep your equity, and continue receiving income throughout retirement.',
 };
 
 export default function Home() {
@@ -26,8 +26,7 @@ export default function Home() {
               Business
             </h1>
             <p className="text-xl md:text-2xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-10">
-              95% of businesses never sell. 96% sell for a fraction of what they are worth.
-              There is a better way. Partner for equity. Build value. Step back. Keep ownership.
+              Build a business that runs without you, so you can step away, keep your equity, and continue receiving income throughout retirement.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -102,10 +101,10 @@ export default function Home() {
             The Solution
           </p>
           <h2 className="text-4xl md:text-5xl mb-6 leading-tight">
-            Partner for Equity.<br />Build Value. Step Back.
+            Build a Business That<br />Runs Without You
           </h2>
           <p className="text-xl text-[#94a3b8] mb-8 max-w-3xl mx-auto leading-relaxed">
-            Instead of selling for a low multiple today, partner with us to grow your business to its true value. You keep ownership. We bring the systems, the team, and the expertise.
+            Step away, keep your equity, and continue receiving income throughout retirement. We partner with you to build the systems, the team, and the structure that makes it possible.
           </p>
           <Link
             href="/the-solution"
@@ -174,7 +173,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#3A7BFF]/10 to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl mb-6 leading-tight">
-            Find Out Where You Stand
+            Ready to Step Away and Keep Your Equity?
           </h2>
           <p className="text-xl text-[#94a3b8] mb-10 leading-relaxed">
             Take our free 5-minute Business Sale Assessment. No pitch. Just clarity.
