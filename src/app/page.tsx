@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AnimatedNumber from '@/components/AnimatedNumber';
 
 export const metadata = {
   title: 'Build a Business That Runs Without You | Retire Without Selling',
@@ -51,15 +52,21 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
             <div className="animate-fade-in-up animation-delay-100">
-              <div className="number-stat">75%</div>
+              <div className="number-stat">
+                <AnimatedNumber target={75} suffix="%" />
+              </div>
               <p className="text-[#94a3b8] mt-4 text-lg">drop in income after selling their business</p>
             </div>
             <div className="animate-fade-in-up animation-delay-200">
-              <div className="number-stat">95%</div>
+              <div className="number-stat">
+                <AnimatedNumber target={95} suffix="%" />
+              </div>
               <p className="text-[#94a3b8] mt-4 text-lg">of businesses don't sell and are simply closed down</p>
             </div>
             <div className="animate-fade-in-up animation-delay-300">
-              <div className="number-stat">76%</div>
+              <div className="number-stat">
+                <AnimatedNumber target={76} suffix="%" />
+              </div>
               <p className="text-[#94a3b8] mt-4 text-lg">of business sellers deeply regret selling</p>
             </div>
           </div>
