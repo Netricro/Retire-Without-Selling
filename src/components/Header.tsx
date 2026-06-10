@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -15,6 +16,7 @@ const navLinks = [
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
@@ -28,15 +30,22 @@ export default function Header() {
         
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-1">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="px-3 py-2 text-sm text-[#94a3b8] hover:text-white transition-colors rounded-md hover:bg-white/5"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`px-3 py-2 text-sm rounded-md transition-colors ${
+                  isActive
+                    ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
+                    : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-3">
@@ -70,16 +79,23 @@ export default function Header() {
       {mobileMenuOpen && (
         <nav className="lg:hidden bg-[#0B0F1A]/95 backdrop-blur-xl border-b border-white/5">
           <div className="max-w-7xl mx-auto px-4 py-4 space-y-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="block px-4 py-3 text-sm text-[#94a3b8] hover:text-white transition-colors rounded-md hover:bg-white/5"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`block px-4 py-3 text-sm rounded-md transition-colors ${
+                    isActive
+                      ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
+                      : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </div>
         </nav>
       )}
