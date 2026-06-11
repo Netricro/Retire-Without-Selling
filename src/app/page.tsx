@@ -19,7 +19,7 @@ export default function Home() {
         <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <div className="animate-fade-in-up">
             <p className="text-[#3A7BFF] text-sm tracking-[0.25em] uppercase font-semibold mb-6">
-              For UK Business Owners 55+
+              For UK Business Owners
             </p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-8">
               Retire Without<br />

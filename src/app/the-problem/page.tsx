@@ -21,7 +21,7 @@ export default function TheProblem() {
         </p>
         
         <p>
-          For most UK business owners over 55, this gap is £1 million or more. And they do not discover it until they try to sell.
+          For most UK business owners, this gap is £1 million or more. And they do not discover it until they try to sell.
         </p>
         
         <div className="glass rounded-xl p-8 my-12 border border-[#3A7BFF]/30">
