@@ -43,7 +43,7 @@ export default function TheProblem() {
         </div>
         
         <p>
-          You imagine selling for millions, handing over the keys, and taking a long holiday with your family. Secure for decades, maybe generations.
+          You imagine selling for £millions, you hand over the keys and take a long well deserved holiday with your family. You believe you are now going to be financially secure for the next 30+ years. Maybe even generations.
         </p>
         
         <p className="text-white text-xl font-semibold">
