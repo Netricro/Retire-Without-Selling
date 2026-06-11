@@ -70,11 +70,39 @@ export default function TheProblem() {
         </div>
         
         <p>
-          Most discover it too late. They have already mentally retired. They have already spent the money in their head. Then the offer comes in, and the reality hits: years of work, valued at a fraction of what they imagined.
+          Most business owners don't discover their Retirement Gap until it's too late.
         </p>
         
         <p>
-          The good news: the gap is predictable. And it is fixable. But not by selling today. By building value first, then exiting on your own terms — or never exiting at all.
+          By then, they've already mentally sold the business. They've started making plans, spending some of the proceeds in their head, and looking forward to life after work. Then their financial adviser shows them what their investment income is actually going to be.
+        </p>
+        
+        <p className="text-white text-xl font-semibold">
+          That's when reality hits.
+        </p>
+        
+        <p>
+          They realise they've sold the greatest income-producing asset they'll ever own, only to replace it with an investment return that's a fraction of the income they were taking from the business.
+        </p>
+        
+        <p className="text-white text-xl font-semibold">
+          The regret can be profound.
+        </p>
+        
+        <p>
+          The good news is that the Retirement Gap is predictable—and it's fixable.
+        </p>
+        
+        <p className="text-white text-xl font-semibold">
+          Instead of selling your income, we help you keep it.
+        </p>
+        
+        <p>
+          Within months, our team can put the right structure, systems and leadership in place so your management team runs the business without you. Your income then comes from dividends rather than day-to-day involvement, and in many cases those dividends match or exceed the income you were taking when you were running the business yourself.
+        </p>
+        
+        <p>
+          That's how you close the Retirement Gap—and create a future where your income continues to grow, even after you've stepped back.
         </p>
         
         <div className="flex flex-col items-center gap-6 my-16">
