@@ -138,5 +138,7 @@ export default function TheProblem() {
         </div>
       </div>
     </div>
+  </section>
+</div>
   );
 }
