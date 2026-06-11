@@ -40,7 +40,7 @@ export default function Contact() {
               Get In Touch
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-16 leading-tight text-center">
-              Two Ways to<br />Start a Conversation
+              Two Ways to<br /><span className="gradient-text">Start a Conversation</span>
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

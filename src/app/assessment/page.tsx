@@ -104,7 +104,7 @@ export default function Assessment() {
               Get Started
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-              Start The Free<br />Assessment
+              Start The Free<br /><span className="gradient-text">Assessment</span>
             </h2>
             <p className="text-xl text-[#94a3b8] max-w-2xl mx-auto leading-relaxed mb-12">
               Takes 5 minutes. Instant results. No email required unless you want to save your report.

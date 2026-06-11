@@ -105,7 +105,7 @@ export default function TheSolution() {
               Comparison
             </p>
             <h2 className="text-4xl md:text-5xl mb-12 leading-tight">
-              Traditional Sale vs<br />Partnering for Equity
+              Traditional Sale vs<br /><span className="gradient-text">Partnering for Equity</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -50,7 +50,7 @@ export default function HowItWorks() {
               The Phases
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-              Build It. Then<br />Exit On Your Terms.
+              Build It. Then<br /><span className="gradient-text">Exit On Your Terms.</span>
             </h2>
           </div>
 
