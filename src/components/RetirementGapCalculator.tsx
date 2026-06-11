@@ -25,8 +25,8 @@ function formatCompact(value: number): string {
 }
 
 export default function RetirementGapCalculator() {
-  const [profit, setProfit] = useState<string>("500000");
-  const [multiple, setMultiple] = useState<string>("3");
+  const [profit, setProfit] = useState<string>("");
+  const [multiple, setMultiple] = useState<string>("");
 
   const profitNum = parseFloat(profit.replace(/[^0-9.]/g, "")) || 0;
   const multipleNum = parseFloat(multiple) || 0;
@@ -74,12 +74,18 @@ export default function RetirementGapCalculator() {
                 setProfit(preset.profit);
                 setMultiple(preset.multiple);
               }}
-              className={`p-4 rounded-xl border text-left transition-all duration-200 ${
+              className={`p-4 rounded-xl border text-left transition-all duration-200 relative ${
                 isPresetActive(preset.profit, preset.multiple)
                   ? "bg-[#3A7BFF]/20 border-[#3A7BFF] text-white"
                   : "bg-[#0B0F1A]/40 border-[#3A7BFF]/20 text-[#94a3b8] hover:bg-[#3A7BFF]/10 hover:border-[#3A7BFF]/40 hover:text-white"
               }`}
             >
+              <div className="flex items-center justify-between mb-2">
+                <span className="text-[#3A7BFF] text-xs tracking-wider uppercase font-semibold">Use this scenario</span>
+                <svg className="w-4 h-4 text-[#3A7BFF]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
               <div className="font-serif text-xl md:text-2xl mb-1">{preset.label}</div>
               <div className="text-sm opacity-70">{preset.desc}</div>
             </button>
@@ -133,7 +139,7 @@ export default function RetirementGapCalculator() {
               type="text"
               value={multiple}
               onChange={handleMultipleChange}
-              placeholder="Type a number..."
+              placeholder="Enter your multiple here"
               className="w-full bg-[#0B0F1A]/60 rounded-xl p-5 pr-12 border-2 border-[#3A7BFF]/30 text-white text-2xl md:text-3xl font-serif text-center bg-transparent focus:outline-none focus:border-[#3A7BFF] focus:ring-2 focus:ring-[#3A7BFF]/20 transition-all cursor-text"
             />
           </div>
