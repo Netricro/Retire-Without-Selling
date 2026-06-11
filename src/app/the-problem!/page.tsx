@@ -82,7 +82,7 @@ export default function TheProblemNew() {
               Scenario
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-12 leading-tight">
-              The £425,000 Mistake
+              The £425,000<br />Mistake
             </h2>
             
             <div className="glass rounded-2xl p-8 md:p-12 glow-blue border border-[#3A7BFF]/20">
