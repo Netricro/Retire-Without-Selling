@@ -7,40 +7,60 @@ export const metadata = {
 
 export default function TheProblem() {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-24">
-      <p className="text-[#3A7BFF] text-sm tracking-[0.25em] uppercase font-semibold mb-6">
-        The Problem
-      </p>
-      <h1 className="text-4xl md:text-6xl mb-8 leading-tight">
-        The Retirement Gap
-      </h1>
-      
-      <div className="space-y-8 text-lg text-[#94a3b8] leading-relaxed">
-        <p className="text-2xl text-white font-light">
-          The difference between your active business income and your future passive income
-        </p>
-        
-        <p>
-          Over 97% of those selling their business suffer a 78%-85% drop in income unnecessarily.
-        </p>
-        
-        <div className="glass rounded-xl p-8 my-12 border border-[#3A7BFF]/30">
-          <h2 className="text-2xl text-white mb-6">The Hard Numbers</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center">
-              <div className="text-5xl font-serif text-[#3A7BFF] mb-2">83%</div>
-              <p className="text-[#94a3b8]">The average reduction in income after a sale</p>
+    <div className="flex flex-col flex-1">
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-24">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0B0F1A] via-[#0f172a] to-[#1a1d2e]" />
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-20 right-20 w-96 h-96 bg-[#3A7BFF] rounded-full blur-[120px] opacity-20" />
+          <div className="absolute bottom-20 left-20 w-80 h-80 bg-[#3A7BFF] rounded-full blur-[100px] opacity-10" />
+        </div>
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
+          <div className="animate-fade-in-up">
+            <p className="text-[#3A7BFF] text-sm tracking-[0.25em] uppercase font-semibold mb-6">
+              The Problem
+            </p>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-8">
+              The Retirement Gap
+            </h1>
+            <p className="text-xl md:text-2xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-10">
+              The difference between your active business income and your future passive income
+            </p>
+            <p className="text-xl md:text-2xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed">
+              Over 97% of those selling their business suffer a 78%-85% drop in income unnecessarily.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div className="section-divider max-w-4xl mx-auto" />
+
+      {/* Hard Numbers */}
+      <section className="py-24 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div className="animate-fade-in-up animation-delay-100">
+              <div className="number-stat">83%</div>
+              <p className="text-[#94a3b8] mt-4 text-lg">The average reduction in income after a sale</p>
             </div>
-            <div className="text-center">
-              <div className="text-5xl font-serif text-[#3A7BFF] mb-2">75%</div>
-              <p className="text-[#94a3b8]">Owners deeply regret selling their business</p>
+            <div className="animate-fade-in-up animation-delay-200">
+              <div className="number-stat">75%</div>
+              <p className="text-[#94a3b8] mt-4 text-lg">Owners deeply regret selling their business</p>
             </div>
-            <div className="text-center">
-              <div className="text-5xl font-serif text-[#3A7BFF] mb-2">68%</div>
-              <p className="text-[#94a3b8]">of businesses fail within 12 months of being sold</p>
+            <div className="animate-fade-in-up animation-delay-300">
+              <div className="number-stat">68%</div>
+              <p className="text-[#94a3b8] mt-4 text-lg">of businesses fail within 12 months of being sold</p>
             </div>
           </div>
         </div>
+      </section>
+
+      <div className="section-divider max-w-4xl mx-auto" />
+
+      {/* Content */}
+      <section className="py-24 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="space-y-8 text-lg text-[#94a3b8] leading-relaxed">
         
         <p>
           You imagine selling for £millions, you hand over the keys and take a long well deserved holiday with your family. You believe you are now going to be financially secure for the next 30+ years. Maybe even generations.
