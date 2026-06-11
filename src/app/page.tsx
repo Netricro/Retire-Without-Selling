@@ -79,7 +79,7 @@ export default function Home() {
             The Problem
           </p>
           <h2 className="text-4xl md:text-5xl mb-6 leading-tight">
-            The Retirement Value Gap
+            The Retirement Gap
           </h2>
           <p className="text-xl text-[#94a3b8] mb-8 max-w-3xl mx-auto leading-relaxed">
             The difference between your Business Earnings NOW and Your Investment Income after selling.

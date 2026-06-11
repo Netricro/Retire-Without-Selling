@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'The Problem | Retire Without Selling',
-  description: 'The Retirement Value Gap: the difference between what your business is worth and what you need to retire. Most UK owners discover it too late.',
+  description: 'The Retirement Gap: the difference between what your business is worth and what you need to retire. Most UK owners discover it too late.',
 };
 
 export default function TheProblem() {
@@ -12,7 +12,7 @@ export default function TheProblem() {
         The Problem
       </p>
       <h1 className="text-4xl md:text-6xl mb-8 leading-tight">
-        The Retirement Value Gap
+        The Retirement Gap
       </h1>
       
       <div className="space-y-8 text-lg text-[#94a3b8] leading-relaxed">
@@ -55,7 +55,7 @@ export default function TheProblem() {
         </p>
         
         <p>
-          This is called the <strong className="text-[#3A7BFF]">Retirement Value Gap</strong>
+          This is called the <strong className="text-[#3A7BFF]">Retirement Gap</strong>
         </p>
         
         <p>
