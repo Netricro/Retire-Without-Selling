@@ -122,8 +122,8 @@ export default function RetirementGapCalculator() {
               className="w-full bg-[#0B0F1A]/60 rounded-xl p-5 pl-12 border-2 border-[#3A7BFF]/30 text-white text-2xl md:text-3xl font-serif text-center bg-transparent focus:outline-none focus:border-[#3A7BFF] focus:ring-2 focus:ring-[#3A7BFF]/20 transition-all cursor-text"
             />
           </div>
-          <p className="text-[#94a3b8]/50 text-sm mt-3">
-            Click and type to change this value
+          <p className="text-[#94a3b8]/60 text-sm mt-3">
+            Annual business earnings (EBITDA) — before interest, tax, depreciation and amortisation
           </p>
         </div>
         <div className="glass rounded-2xl p-6 md:p-8 border border-[#3A7BFF]/20 relative">
@@ -143,8 +143,8 @@ export default function RetirementGapCalculator() {
               className="w-full bg-[#0B0F1A]/60 rounded-xl p-5 pr-12 border-2 border-[#3A7BFF]/30 text-white text-2xl md:text-3xl font-serif text-center bg-transparent focus:outline-none focus:border-[#3A7BFF] focus:ring-2 focus:ring-[#3A7BFF]/20 transition-all cursor-text"
             />
           </div>
-          <p className="text-[#94a3b8]/50 text-sm mt-3">
-            Click and type to change this value
+          <p className="text-[#94a3b8]/60 text-sm mt-3">
+            Typical range: 2x–5x for most UK businesses. Owner-dependent businesses often sell for less.
           </p>
         </div>
       </div>
