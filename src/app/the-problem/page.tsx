@@ -17,7 +17,7 @@ export default function TheProblem() {
       
       <div className="space-y-8 text-lg text-[#94a3b8] leading-relaxed">
         <p className="text-2xl text-white font-light">
-          The difference between your Business Earnings NOW and Your Investment Income after selling.
+          the difference between your active business income and your future passive income
         </p>
         
         <p>

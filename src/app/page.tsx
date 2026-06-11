@@ -82,7 +82,7 @@ export default function Home() {
             The Retirement Gap
           </h2>
           <p className="text-xl text-[#94a3b8] mb-8 max-w-3xl mx-auto leading-relaxed">
-            The difference between your Business Earnings NOW and Your Investment Income after selling.
+            the difference between your active business income and your future passive income
           </p>
           <Link
             href="/the-problem"
