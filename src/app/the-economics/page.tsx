@@ -57,22 +57,33 @@ export default function TheEconomics() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#3A7BFF]/10 to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <div className="animate-fade-in-up">
+            <p className="text-[#3A7BFF] text-sm tracking-[0.25em] uppercase font-semibold mb-6">
+              Next Step
+            </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-              Read Our<br />
-              <span className="gradient-text">Story</span>
+              Let&apos;s Talk<br />
+              <span className="gradient-text">About Your Numbers</span>
             </h2>
             <p className="text-xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-12">
-              See how the Build to Retire model works in practice and what it could mean for your business.
+              No pitch. No pressure. Just a conversation about what those numbers mean for you — and what you can do about them.
             </p>
-            <Link
-              href="/your-story"
-              className="inline-flex items-center justify-center px-10 py-5 bg-[#3A7BFF] text-white text-lg font-semibold rounded-xl hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#3A7BFF]/20"
-            >
-              Read Our Story
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center px-10 py-5 bg-[#3A7BFF] text-white text-lg font-semibold rounded-xl hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#3A7BFF]/20"
+              >
+                Contact Us
+                <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+              <Link
+                href="https://regenovate.com/bsa"
+                className="inline-flex items-center justify-center px-10 py-5 border border-[#3A7BFF]/30 text-white text-lg font-semibold rounded-xl hover:bg-[#3A7BFF]/10 transition-all duration-300"
+              >
+                Take the Free Assessment
+              </Link>
+            </div>
           </div>
         </div>
       </section>
