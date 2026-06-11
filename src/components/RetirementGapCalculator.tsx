@@ -56,10 +56,6 @@ export default function RetirementGapCalculator() {
     { label: "£2M profit", profit: "2000000", multiple: "4" },
   ];
 
-  const maxBar = profitNum > 0 ? profitNum : 1;
-  const businessHeight = 100;
-  const investmentHeight = maxBar > 0 ? (investmentIncome / maxBar) * 100 : 0;
-
   return (
     <div className="w-full">
       {/* Presets */}
@@ -118,56 +114,34 @@ export default function RetirementGapCalculator() {
         </div>
       </div>
 
-      {/* Visual Gap Chart */}
-      <div className="glass rounded-2xl p-6 md:p-10 border border-[#3A7BFF]/20 mb-10">
-        <div className="flex items-end justify-between gap-6 md:gap-10 h-56 md:h-72">
-          <div className="flex-1 flex flex-col items-center">
-            <div className="w-full bg-[#3A7BFF]/40 rounded-t-xl flex items-center justify-center transition-all duration-500" style={{ height: `${businessHeight}%` }}>
-              <div className="text-center pb-4">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-serif text-white">{formatCompact(profitNum)}</div>
-                <div className="text-sm text-[#94a3b8] mt-1 font-medium">Your Annual Income</div>
-              </div>
-            </div>
-          </div>
-          <div className="flex items-center justify-center pb-16">
-            <svg className="w-14 h-14 md:w-16 md:h-16 text-[#3A7BFF]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
-          <div className="flex-1 flex flex-col items-center">
-            <div className="w-full bg-[#3A7BFF]/10 rounded-t-xl border border-[#3A7BFF]/20 flex items-center justify-center transition-all duration-500" style={{ height: `${Math.max(investmentHeight, 15)}%` }}>
-              <div className="text-center pb-4">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-serif text-[#94a3b8]">{formatCompact(investmentIncome)}</div>
-                <div className="text-sm text-[#94a3b8]/70 mt-1 font-medium">Investment Income</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="mt-8 text-center">
-          <div className="inline-block px-8 py-4 bg-[#3A7BFF]/20 rounded-xl border border-[#3A7BFF]/30">
-            <span className="text-[#3A7BFF] text-lg md:text-xl font-semibold">Sale Price: {formatCurrency(salePrice)} ({formatCompact(profitNum)} × {multipleNum}x)</span>
-          </div>
-        </div>
-      </div>
-
-      {/* The Gap Results */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* The Results — Four Boxes */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         <div className="text-center p-6 md:p-8 glass rounded-2xl border border-[#3A7BFF]/20">
+          <div className="text-base text-[#94a3b8] mb-3 font-medium">Sale Price</div>
+          <div className="text-4xl md:text-5xl font-serif text-[#3A7BFF]">{formatCurrency(salePrice)}</div>
+          <div className="text-base text-[#94a3b8]/70 mt-3">{formatCompact(profitNum)} × {multipleNum}x</div>
+        </div>
+        <div className="text-center p-6 md:p-8 glass rounded-2xl border border-[#3A7BFF]/20">
+          <div className="text-base text-[#94a3b8] mb-3 font-medium">Investment Income (5% pa)</div>
+          <div className="text-4xl md:text-5xl font-serif text-[#94a3b8]">{formatCurrency(investmentIncome)}</div>
+          <div className="text-base text-[#94a3b8]/70 mt-3">What your sale proceeds generate</div>
+        </div>
+        <div className="text-center p-6 md:p-8 glass rounded-2xl border border-red-500/30">
           <div className="text-base text-[#94a3b8] mb-3 font-medium">Annual Retirement Gap</div>
-          <div className="text-4xl md:text-5xl lg:text-6xl font-serif text-red-400">{formatCurrency(annualGap)}</div>
+          <div className="text-4xl md:text-5xl font-serif text-red-400">{formatCurrency(annualGap)}</div>
           <div className="text-base text-red-400/70 mt-3">{percentageDrop.toFixed(0)}% income reduction</div>
         </div>
         <div className="text-center p-6 md:p-8 glass rounded-2xl border border-red-500/30">
           <div className="text-base text-[#94a3b8] mb-3 font-medium">Lost Over 10 Years</div>
-          <div className="text-4xl md:text-5xl lg:text-6xl font-serif text-red-400">{formatCurrency(tenYearGap)}</div>
+          <div className="text-4xl md:text-5xl font-serif text-red-400">{formatCurrency(tenYearGap)}</div>
           <div className="text-base text-red-400/70 mt-3">Total income you will never see</div>
         </div>
-        <div className="text-center p-6 md:p-8 glass rounded-2xl border border-[#3A7BFF]/20 flex flex-col items-center justify-center">
-          <div className="text-base text-[#94a3b8] mb-4 font-medium">The Reality</div>
-          <p className="text-lg text-[#94a3b8] leading-relaxed">
-            Even investing <strong className="text-white">100% of your sale proceeds</strong> at 5% return, you replace a high-performing asset with a fraction of its income.
-          </p>
-        </div>
+      </div>
+
+      <div className="glass rounded-2xl p-6 md:p-8 border border-[#3A7BFF]/20 mb-8">
+        <p className="text-lg text-[#94a3b8] leading-relaxed text-center">
+          Even investing <strong className="text-white">100% of your sale proceeds</strong> at 5% return, you replace a high-performing asset with a fraction of its income.
+        </p>
       </div>
 
       <div className="mt-8 text-center">
