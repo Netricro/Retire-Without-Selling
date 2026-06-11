@@ -52,51 +52,6 @@ export default function TheEconomics() {
 
       <div className="section-divider max-w-4xl mx-auto" />
 
-      {/* SECTION 3: The Partner's Role */}
-      <section className="py-24 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="animate-fade-in-up">
-            <p className="text-[#3A7BFF] text-sm tracking-[0.25em] uppercase font-semibold mb-6">
-              The Partnership
-            </p>
-            <h2 className="text-4xl md:text-5xl mb-12 leading-tight">
-              The Partner's<br />
-              <span className="gradient-text">Role</span>
-            </h2>
-            
-            <div className="glass rounded-2xl p-8 md:p-12 glow-blue border border-[#3A7BFF]/20 relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-1 h-full bg-[#3A7BFF]" />
-              <div className="pl-6">
-                <p className="text-xl text-[#94a3b8] mb-8">We bring:</p>
-                <ul className="space-y-6">
-                  <li className="flex gap-4 items-start">
-                    <span className="text-[#3A7BFF] text-2xl font-serif shrink-0">•</span>
-                    <span className="text-lg text-[#94a3b8]"><strong className="text-white">Capital</strong> to fund growth</span>
-                  </li>
-                  <li className="flex gap-4 items-start">
-                    <span className="text-[#3A7BFF] text-2xl font-serif shrink-0">•</span>
-                    <span className="text-lg text-[#94a3b8]"><strong className="text-white">Expertise</strong> in building systems</span>
-                  </li>
-                  <li className="flex gap-4 items-start">
-                    <span className="text-[#3A7BFF] text-2xl font-serif shrink-0">•</span>
-                    <span className="text-lg text-[#94a3b8]"><strong className="text-white">Management talent</strong> to run the business</span>
-                  </li>
-                  <li className="flex gap-4 items-start">
-                    <span className="text-[#3A7BFF] text-2xl font-serif shrink-0">•</span>
-                    <span className="text-lg text-[#94a3b8]"><strong className="text-white">Network</strong> of potential buyers</span>
-                  </li>
-                </ul>
-                <p className="mt-10 text-lg text-[#94a3b8] leading-relaxed">
-                  In exchange, we earn equity as the value grows. We only win if the business wins. Our incentives are aligned with yours.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div className="section-divider max-w-4xl mx-auto" />
-
       {/* FINAL CTA */}
       <section className="py-24 px-6 relative">
         <div className="absolute inset-0 bg-gradient-to-t from-[#3A7BFF]/10 to-transparent" />
@@ -107,7 +62,7 @@ export default function TheEconomics() {
               <span className="gradient-text">Story</span>
             </h2>
             <p className="text-xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-12">
-              See how the partnership model works in practice and what it could mean for your business.
+              See how the Build to Retire model works in practice and what it could mean for your business.
             </p>
             <Link
               href="/your-story"
