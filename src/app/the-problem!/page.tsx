@@ -172,7 +172,7 @@ export default function TheProblemNew() {
                   The Truth About Exit Planning
                 </p>
                 <h2 className="text-4xl md:text-5xl mb-8 leading-tight">
-                  The Biggest Lie In<br />Exit Planning
+                  The Biggest Lie In Exit Planning
                 </h2>
                 <div className="space-y-6 text-lg text-[#94a3b8] leading-relaxed">
                   <p className="text-2xl text-white font-light">
