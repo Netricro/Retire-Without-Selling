@@ -77,8 +77,8 @@ export default function TheSolution() {
                   },
                   {
                     num: '5',
-                    title: 'Exit On Your Terms',
-                    body: 'When the business is worth 8-12x profit, sell to a premium buyer — or keep the income and never exit at all.',
+                    title: 'Retire Without Selling',
+                    body: 'The business generates income without your daily involvement. You keep your equity. You keep the income. No sale required.',
                   },
                 ].map((step, index) => (
                   <div key={index} className="flex gap-4">
@@ -138,7 +138,7 @@ export default function TheSolution() {
                     'Build to 8-12x profit',
                     'Receive ongoing income',
                     'Step back gradually',
-                    'Exit on your own terms',
+                    'Keep equity, never sell',
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <span className="text-emerald-400">✓</span>
@@ -192,7 +192,7 @@ export default function TheSolution() {
               Ready to Build a<br />Business That Runs<br /><span className="gradient-text">Without You?</span>
             </h2>
             <p className="text-xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-12">
-              Discover how partnering for equity can help you step back, keep your income, and exit on your own terms.
+              Discover how partnering for equity can help you step back, keep your income, and build a business that runs without you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
