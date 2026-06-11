@@ -63,29 +63,10 @@ export default function TheProblem() {
         </p>
         
         <div className="glass rounded-xl p-8 my-12">
-          <h2 className="text-2xl text-white mb-4">Why It Happens</h2>
-          <ul className="space-y-4">
-            <li className="flex gap-3">
-              <span className="text-[#3A7BFF] shrink-0">•</span>
-              <span><strong className="text-white">Key person dependency</strong> — the business cannot function without the owner</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-[#3A7BFF] shrink-0">•</span>
-              <span><strong className="text-white">No documented systems</strong> — everything is in the owner's head</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-[#3A7BFF] shrink-0">•</span>
-              <span><strong className="text-white">Concentrated customer base</strong> — one or two customers represent most revenue</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-[#3A7BFF] shrink-0">•</span>
-              <span><strong className="text-white">Poor financial records</strong> — the true profitability is hidden or unclear</span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-[#3A7BFF] shrink-0">•</span>
-              <span><strong className="text-white">No management team</strong> — the team cannot operate without the owner's daily decisions</span>
-            </li>
-          </ul>
+          <h2 className="text-2xl text-white mb-4">Why The Retirement Gap Happens</h2>
+          <p className="text-lg text-[#94a3b8] leading-relaxed">
+            The Retirement Gap happens when you are forced to sell prematurely, leaving the business half-built and its true potential unrealized.
+          </p>
         </div>
         
         <p>
