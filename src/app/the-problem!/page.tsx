@@ -39,6 +39,20 @@ export default function TheProblemNew() {
             </div>
             {/* Visual Gap Illustration */}
             <div className="mt-16 max-w-3xl mx-auto">
+              {/* Chart Header Labels */}
+              <div className="grid grid-cols-[1fr_auto_1fr] gap-4 md:gap-8 mb-4">
+                <div className="text-center">
+                  <div className="text-[#3A7BFF] text-sm tracking-wider uppercase font-semibold mb-1">Your Current Reality</div>
+                  <div className="text-white text-lg md:text-xl font-serif font-medium">Annual Business Income</div>
+                  <div className="text-[#94a3b8] text-sm mt-1">What you take from the business today</div>
+                </div>
+                <div className="w-12 md:w-16" /> {/* Spacer for arrow */}
+                <div className="text-center">
+                  <div className="text-[#94a3b8]/70 text-sm tracking-wider uppercase font-semibold mb-1">After Selling</div>
+                  <div className="text-[#94a3b8] text-lg md:text-xl font-serif font-medium">Annual Investment Income</div>
+                  <div className="text-[#94a3b8]/70 text-sm mt-1">5% return on your sale proceeds</div>
+                </div>
+              </div>
               <div className="flex items-end justify-between gap-4 h-48 md:h-64">
                 <div className="flex-1 flex flex-col items-center">
                   <div className="w-full bg-[#3A7BFF]/30 rounded-t-lg h-48 md:h-64 flex items-center justify-center">
