@@ -47,15 +47,19 @@ export default function TheProblem() {
         </p>
         
         <p className="text-white text-xl font-semibold">
-          This is a fairy tale for most business owners.
+          Sadly, that is seldom what happens
         </p>
         
         <p>
-          The market does not care how hard you worked. It values what your business can generate <strong className="text-white">without you</strong>. If the systems are in your head, the clients only want you, and the team cannot function without your daily involvement — the market sees a business worth a fraction of what you built.
+          For 98% of sellers this is a fairytale. After they sell their business, even if they invest 100% of the money with a financial advisor, the income from their investments is typically 78% to 89% LESS than their income from their business. And to make matters worse, inflation reduces this even further.
         </p>
         
         <p>
-          The average owner thinks their business is worth 3-5 times profit. The market often pays 1-2 times. That gap is the <strong className="text-[#3A7BFF]">Retirement Value Gap</strong>.
+          This is called the <strong className="text-[#3A7BFF]">Retirement Value Gap</strong>
+        </p>
+        
+        <p>
+          But there is a better way that helps you retain or even improve your income level you enjoyed when you owned the business without all the responsibilities.
         </p>
         
         <div className="glass rounded-xl p-8 my-12">
