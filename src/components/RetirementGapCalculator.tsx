@@ -120,29 +120,63 @@ export default function RetirementGapCalculator() {
 
       {/* Visual Gap Chart */}
       <div className="glass rounded-2xl p-6 md:p-10 border border-[#3A7BFF]/20 mb-10">
-        <div className="flex items-end justify-between gap-6 md:gap-10 h-56 md:h-72">
-          <div className="flex-1 flex flex-col items-center">
-            <div className="w-full bg-[#3A7BFF]/40 rounded-t-xl flex items-center justify-center transition-all duration-500" style={{ height: `${businessHeight}%` }}>
-              <div className="text-center pb-4">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-serif text-white">{formatCompact(profitNum)}</div>
-                <div className="text-sm text-[#94a3b8] mt-1 font-medium">Your Annual Income</div>
+        {/* Chart Header Labels */}
+        <div className="grid grid-cols-[1fr_auto_1fr] gap-6 md:gap-10 mb-4">
+          <div className="text-center">
+            <div className="text-[#3A7BFF] text-sm tracking-wider uppercase font-semibold mb-1">Your Current Reality</div>
+            <div className="text-white text-xl md:text-2xl font-serif font-medium">Annual Business Income</div>
+            <div className="text-[#94a3b8] text-sm mt-1">What you take from the business today</div>
+          </div>
+          <div className="w-14 md:w-16" /> {/* Spacer for arrow */}
+          <div className="text-center">
+            <div className="text-[#94a3b8]/70 text-sm tracking-wider uppercase font-semibold mb-1">After Selling</div>
+            <div className="text-[#94a3b8] text-xl md:text-2xl font-serif font-medium">Annual Investment Income</div>
+            <div className="text-[#94a3b8]/70 text-sm mt-1">5% return on your sale proceeds</div>
+          </div>
+        </div>
+
+        {/* Y-axis scale + bars */}
+        <div className="flex items-stretch gap-2 md:gap-4 h-56 md:h-72">
+          {/* Y-axis */}
+          <div className="flex flex-col justify-between text-right pr-2 text-[#94a3b8]/50 text-xs md:text-sm font-mono w-20 md:w-24 shrink-0">
+            <span>{formatCompact(maxBar)}</span>
+            <span>{formatCompact(maxBar * 0.75)}</span>
+            <span>{formatCompact(maxBar * 0.5)}</span>
+            <span>{formatCompact(maxBar * 0.25)}</span>
+            <span>£0</span>
+          </div>
+          
+          {/* Bars area */}
+          <div className="flex-1 flex items-end justify-between gap-6 md:gap-10 relative">
+            {/* Grid lines */}
+            <div className="absolute inset-0 flex flex-col justify-between pointer-events-none">
+              {[1, 0.75, 0.5, 0.25, 0].map((pct, i) => (
+                <div key={i} className="w-full border-t border-[#94a3b8]/10" />
+              ))}
+            </div>
+            
+            <div className="flex-1 flex flex-col items-center relative z-10">
+              <div className="w-full bg-[#3A7BFF]/40 rounded-t-xl flex items-end justify-center pb-4 transition-all duration-500" style={{ height: `${businessHeight}%` }}>
+                <div className="text-center">
+                  <div className="text-2xl md:text-3xl lg:text-4xl font-serif text-white">{formatCompact(profitNum)}</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="flex items-center justify-center pb-16">
-            <svg className="w-14 h-14 md:w-16 md:h-16 text-[#3A7BFF]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </div>
-          <div className="flex-1 flex flex-col items-center">
-            <div className="w-full bg-[#3A7BFF]/10 rounded-t-xl border border-[#3A7BFF]/20 flex items-center justify-center transition-all duration-500" style={{ height: `${Math.max(investmentHeight, 15)}%` }}>
-              <div className="text-center pb-4">
-                <div className="text-2xl md:text-3xl lg:text-4xl font-serif text-[#94a3b8]">{formatCompact(investmentIncome)}</div>
-                <div className="text-sm text-[#94a3b8]/70 mt-1 font-medium">Investment Income</div>
+            <div className="flex items-center justify-center pb-20 relative z-10">
+              <svg className="w-14 h-14 md:w-16 md:h-16 text-[#3A7BFF]/60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </div>
+            <div className="flex-1 flex flex-col items-center relative z-10">
+              <div className="w-full bg-[#3A7BFF]/10 rounded-t-xl border border-[#3A7BFF]/20 flex items-end justify-center pb-4 transition-all duration-500" style={{ height: `${Math.max(investmentHeight, 15)}%` }}>
+                <div className="text-center">
+                  <div className="text-2xl md:text-3xl lg:text-4xl font-serif text-[#94a3b8]">{formatCompact(investmentIncome)}</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        
         <div className="mt-8 text-center">
           <div className="inline-block px-8 py-4 bg-[#3A7BFF]/20 rounded-xl border border-[#3A7BFF]/30">
             <span className="text-[#3A7BFF] text-lg md:text-xl font-semibold">Sale Price: {formatCurrency(salePrice)} ({formatCompact(profitNum)} × {multipleNum}x)</span>
