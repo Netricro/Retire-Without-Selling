@@ -53,9 +53,9 @@ export default function TheProblemNew() {
                   </svg>
                 </div>
                 <div className="flex-1 flex flex-col items-center">
-                  <div className="w-full bg-[#3A7BFF]/10 rounded-t-lg h-16 md:h-24 flex items-center justify-center">
+                  <div className="w-full bg-[#3A7BFF]/10 rounded-t-lg h-12 md:h-16 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-3xl md:text-4xl font-serif text-[#94a3b8]">£150K</div>
+                      <div className="text-3xl md:text-4xl font-serif text-[#94a3b8]">£75K</div>
                       <div className="text-sm text-[#94a3b8] mt-2">Investment Income</div>
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export default function TheProblemNew() {
               </div>
               <div className="mt-4 text-center">
                 <div className="inline-block px-6 py-3 bg-[#3A7BFF]/20 rounded-lg border border-[#3A7BFF]/30">
-                  <span className="text-[#3A7BFF] font-semibold">The Gap: £350K per year — Forever</span>
+                  <span className="text-[#3A7BFF] font-semibold">The Gap: £425K per year — Forever</span>
                 </div>
               </div>
             </div>
@@ -81,7 +81,7 @@ export default function TheProblemNew() {
               Scenario
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-12 leading-tight">
-              The £300,000<br />Mistake
+              The £425,000<br />Mistake
             </h2>
             
             <div className="glass rounded-2xl p-8 md:p-12 glow-blue border border-[#3A7BFF]/20">
@@ -91,7 +91,7 @@ export default function TheProblemNew() {
                     Imagine your business generates <span className="text-white font-semibold">£500,000 per year</span>.
                   </p>
                   <p className="text-xl text-[#94a3b8] leading-relaxed mt-4">
-                    After years of hard work you sell it for <span className="text-white font-semibold">£5 million</span>.
+                    After years of hard work you sell it for <span className="text-white font-semibold">£1.5 million</span>.
                   </p>
                   <p className="text-xl text-white font-semibold mt-6">
                     Sounds like success.
@@ -100,10 +100,10 @@ export default function TheProblemNew() {
                 
                 <div className="text-center">
                   <p className="text-lg text-[#94a3b8] leading-relaxed">
-                    But after fees, taxes and sensible investment returns, your £5 million may only generate
+                    But after fees, taxes and sensible investment returns, your £1.5 million may only generate
                   </p>
                   <p className="text-5xl md:text-6xl font-serif text-[#3A7BFF] my-6">
-                    £150,000–£250,000
+                    £75,000
                   </p>
                   <p className="text-lg text-[#94a3b8] leading-relaxed">
                     per year.
@@ -115,7 +115,7 @@ export default function TheProblemNew() {
                     You haven't secured your future.
                   </p>
                   <p className="text-2xl md:text-3xl font-serif text-[#3A7BFF] mt-4">
-                    You've taken a £250,000–£350,000 annual pay cut.
+                    You've taken a £425,000 annual pay cut.
                   </p>
                   <p className="text-xl text-white font-semibold mt-4">
                     Forever.
@@ -366,7 +366,7 @@ export default function TheProblemNew() {
                 <div>
                   <label className="block text-[#94a3b8] text-sm mb-3">Estimated business valuation</label>
                   <div className="glass rounded-lg p-4 border border-[#3A7BFF]/20 text-center">
-                    <span className="text-2xl md:text-3xl font-serif text-[#3A7BFF]">£5,000,000</span>
+                    <span className="text-2xl md:text-3xl font-serif text-[#3A7BFF]">£1,500,000</span>
                   </div>
                 </div>
               </div>
@@ -380,21 +380,21 @@ export default function TheProblemNew() {
                 </div>
                 <div className="text-center">
                   <div className="text-sm text-[#94a3b8] mb-2">Investment Income</div>
-                  <div className="text-2xl font-serif text-[#94a3b8]">£150K</div>
+                  <div className="text-2xl font-serif text-[#94a3b8]">£75K</div>
                 </div>
                 <div className="text-center">
                   <div className="text-sm text-[#94a3b8] mb-2">Annual Gap</div>
-                  <div className="text-2xl font-serif text-red-400">£350K</div>
+                  <div className="text-2xl font-serif text-red-400">£425K</div>
                 </div>
                 <div className="text-center">
                   <div className="text-sm text-[#94a3b8] mb-2">10-Year Gap</div>
-                  <div className="text-2xl font-serif text-red-400">£3.5M</div>
+                  <div className="text-2xl font-serif text-red-400">£4.25M</div>
                 </div>
               </div>
               
               <div className="mt-8 text-center">
                 <p className="text-[#94a3b8] text-sm">
-                  Based on typical investment returns of 3-5% after fees and taxes
+                  Based on typical sale multiple of 3x EBITDA and investment returns of 5% after fees and taxes
                 </p>
               </div>
             </div>
