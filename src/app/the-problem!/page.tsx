@@ -250,11 +250,11 @@ export default function TheProblemNew() {
                     <span>Independent business</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="text-emerald-400">↓</span>
+                    <span className="text-emerald-400">↑</span>
                     <span>Dividend income</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <span className="text-emerald-400">↓</span>
+                    <span className="text-emerald-400">↑</span>
                     <span>Wealth growth</span>
                   </div>
                 </div>
