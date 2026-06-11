@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import AnimatedNumber from '@/components/AnimatedNumber';
+import RetirementGapCalculator from '@/components/RetirementGapCalculator';
 
 export const metadata = {
   title: 'The Retirement Gap | Retire Without Selling',
@@ -355,49 +356,7 @@ export default function TheProblemNew() {
               See what selling your business could really cost you
             </p>
             
-            <div className="glass rounded-2xl p-8 md:p-12 glow-blue border border-[#3A7BFF]/20">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                <div>
-                  <label className="block text-[#94a3b8] text-sm mb-3">Current annual income from business</label>
-                  <div className="glass rounded-lg p-4 border border-[#3A7BFF]/20 text-center">
-                    <span className="text-2xl md:text-3xl font-serif text-[#3A7BFF]">£500,000</span>
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-[#94a3b8] text-sm mb-3">Estimated business valuation</label>
-                  <div className="glass rounded-lg p-4 border border-[#3A7BFF]/20 text-center">
-                    <span className="text-2xl md:text-3xl font-serif text-[#3A7BFF]">£1,500,000</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="section-divider max-w-2xl mx-auto my-8" />
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="text-center">
-                  <div className="text-sm text-[#94a3b8] mb-2">Current Income</div>
-                  <div className="text-2xl font-serif text-[#3A7BFF]">£500K</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-sm text-[#94a3b8] mb-2">Investment Income</div>
-                  <div className="text-2xl font-serif text-[#94a3b8]">£75K</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-sm text-[#94a3b8] mb-2">Annual Gap</div>
-                  <div className="text-2xl font-serif text-red-400">£425K</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-sm text-[#94a3b8] mb-2">10-Year Gap</div>
-                  <div className="text-2xl font-serif text-red-400">£4.25M</div>
-                </div>
-              </div>
-              
-              <div className="mt-8 text-center">
-                <p className="text-[#94a3b8] text-sm">
-                  Based on typical sale multiple of 3x EBITDA and investment returns of 5% after fees and taxes
-                </p>
-              </div>
-            </div>
+            <RetirementGapCalculator />
           </div>
         </div>
       </section>
