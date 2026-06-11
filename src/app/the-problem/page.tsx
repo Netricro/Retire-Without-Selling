@@ -28,16 +28,16 @@ export default function TheProblem() {
           <h2 className="text-2xl text-white mb-6">The Hard Numbers</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="text-5xl font-serif text-[#3A7BFF] mb-2">95%</div>
-              <p className="text-[#94a3b8]">of businesses put up for sale never sell</p>
+              <div className="text-5xl font-serif text-[#3A7BFF] mb-2">83%</div>
+              <p className="text-[#94a3b8]">The average reduction in income after a sale</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-serif text-[#3A7BFF] mb-2">96%</div>
-              <p className="text-[#94a3b8]">that do sell go for 20-30% of true value</p>
+              <div className="text-5xl font-serif text-[#3A7BFF] mb-2">75%</div>
+              <p className="text-[#94a3b8]">Owners deeply regret selling their business</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl font-serif text-[#3A7BFF] mb-2">3x</div>
-              <p className="text-[#94a3b8]">valuation gap between expectation and reality</p>
+              <div className="text-5xl font-serif text-[#3A7BFF] mb-2">68%</div>
+              <p className="text-[#94a3b8]">of businesses fail within 12 months of being sold</p>
             </div>
           </div>
         </div>
