@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import RetirementGapCalculator from '@/components/RetirementGapCalculator';
 
 export const metadata = {
   title: 'The Economics | Retire Without Selling',
@@ -33,7 +34,7 @@ export default function TheEconomics() {
 
       <div className="section-divider max-w-4xl mx-auto" />
 
-      {/* SECTION 2: The Comparison */}
+      {/* SECTION 2: The Calculator */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="animate-fade-in-up">
@@ -41,76 +42,10 @@ export default function TheEconomics() {
               The Numbers
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-16 leading-tight text-center">
-              Two Paths. Two Outcomes.<br />
-              <span className="gradient-text">One Choice.</span>
+              See What Selling<br />
+              <span className="gradient-text">Really Costs You</span>
             </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* The Typical Sale */}
-              <div className="glass rounded-2xl p-8 md:p-10 glow-blue border border-red-500/20 relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-1 bg-red-500/40" />
-                <h2 className="text-2xl md:text-3xl mb-8 text-[#94a3b8] font-serif">The Typical Sale</h2>
-                <div className="space-y-4 text-lg">
-                  <div className="flex justify-between items-center py-3 border-b border-[#1e293b]">
-                    <span className="text-[#94a3b8]">Current EBIT</span>
-                    <span className="font-semibold text-white">£500,000</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-[#1e293b]">
-                    <span className="text-[#94a3b8]">Market Multiple</span>
-                    <span className="font-semibold text-white">1.5x – 2.5x</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-[#1e293b]">
-                    <span className="text-[#94a3b8]">Sale Value</span>
-                    <span className="font-semibold text-red-400 text-xl">£750K – £1.25M</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-[#1e293b]">
-                    <span className="text-[#94a3b8]">What You Need to Retire</span>
-                    <span className="font-semibold text-white">£2M – £3M</span>
-                  </div>
-                  <div className="pt-4 mt-4 border-t-2 border-red-400/60">
-                    <div className="flex justify-between items-center">
-                      <span className="text-red-400 font-semibold text-lg">The Gap</span>
-                      <span className="font-semibold text-red-400 text-xl">£1M – £2.25M</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* The Partnering Path */}
-              <div className="glass rounded-2xl p-8 md:p-10 glow-blue border border-[#3A7BFF]/30 relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-1 bg-[#3A7BFF]/40" />
-                <h2 className="text-2xl md:text-3xl mb-8 text-[#3A7BFF] font-serif">The Partnering Path</h2>
-                <div className="space-y-4 text-lg">
-                  <div className="flex justify-between items-center py-3 border-b border-[#1e293b]">
-                    <span className="text-[#94a3b8]">Year 1–2: Systemise & Grow</span>
-                    <span className="font-semibold text-white">EBIT doubles to £1M</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-[#1e293b]">
-                    <span className="text-[#94a3b8]">Year 3–5: Scale & Optimise</span>
-                    <span className="font-semibold text-white">EBIT reaches £2M</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-[#1e293b]">
-                    <span className="text-[#94a3b8]">Exit Multiple</span>
-                    <span className="font-semibold text-[#3A7BFF] text-xl">8x – 12x</span>
-                  </div>
-                  <div className="flex justify-between items-center py-3 border-b border-[#1e293b]">
-                    <span className="text-[#94a3b8]">Final Value</span>
-                    <span className="font-semibold text-[#3A7BFF] text-xl">£16M – £24M</span>
-                  </div>
-                  <div className="pt-4 mt-4 border-t-2 border-[#3A7BFF]/60">
-                    <div className="flex justify-between items-center">
-                      <span className="text-[#3A7BFF] font-semibold text-lg">Your Share (80%)</span>
-                      <span className="font-semibold text-[#3A7BFF] text-xl">£12.8M – £19.2M</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <p className="text-center text-xl text-[#94a3b8] mt-16 max-w-3xl mx-auto leading-relaxed">
-              Illustrative numbers. Every business is different. The principle is the same:{' '}
-              <strong className="text-white">build value first, exit later.</strong>
-            </p>
+            <RetirementGapCalculator />
           </div>
         </div>
       </section>
