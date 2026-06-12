@@ -115,7 +115,7 @@ export default function YourStory() {
               The Methodology
             </p>
             <h2 className="text-4xl md:text-5xl mb-12 leading-tight">
-              Build To Retire
+              Retire Without Selling
             </h2>
             
             <div className="glass rounded-2xl p-8 md:p-12 border border-[#3A7BFF]/20 relative overflow-hidden">
