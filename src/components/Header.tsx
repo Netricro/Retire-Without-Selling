@@ -72,6 +72,7 @@ function NavLink({ href, label, isActive, onClick }: { href: string; label: stri
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [solutionOpen, setSolutionOpen] = useState(false);
+  const [mobileSolutionOpen, setMobileSolutionOpen] = useState(false);
   const pathname = usePathname();
   const { theme, cycle } = useTheme();
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -90,6 +91,7 @@ export default function Header() {
   // Close dropdown on route change
   useEffect(() => {
     setSolutionOpen(false);
+    setMobileSolutionOpen(false);
     setMobileMenuOpen(false);
   }, [pathname]);
 
@@ -207,7 +209,7 @@ export default function Header() {
         <div className="lg:hidden bg-[#0B0F1A] border-b border-white/10">
           <div className="max-w-7xl mx-auto px-4 py-4 space-y-1">
             <button
-              onClick={() => setSolutionOpen(!solutionOpen)}
+              onClick={() => setMobileSolutionOpen(!mobileSolutionOpen)}
               className={`flex items-center justify-between w-full px-4 py-3 text-sm rounded-md transition-colors ${
                 isSolutionActive
                   ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
@@ -216,7 +218,7 @@ export default function Header() {
             >
               <span>The Solution</span>
               <svg
-                className={`w-4 h-4 transition-transform ${solutionOpen ? 'rotate-180' : ''}`}
+                className={`w-4 h-4 transition-transform ${mobileSolutionOpen ? 'rotate-180' : ''}`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -224,7 +226,7 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            {solutionOpen && (
+            {mobileSolutionOpen && (
               <div className="pl-4 space-y-1 border-l border-white/10 ml-4">
                 {solutionLinks.map((link) => (
                   <a
