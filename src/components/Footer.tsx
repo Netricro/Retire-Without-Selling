@@ -25,6 +25,8 @@ export default function Footer() {
           <span className="hidden md:inline">|</span>
           <Link href="/cookies" className="hover:text-white transition-colors">Cookie Policy</Link>
           <span className="hidden md:inline">|</span>
+          <Link href="/join" className="hover:text-white transition-colors">Recruitment</Link>
+          <span className="hidden md:inline">|</span>
           <span>Company Number: 15339923</span>
         </div>
         <div className="text-center mt-6 text-[#94a3b8] text-xs">
