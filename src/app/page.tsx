@@ -200,7 +200,7 @@ export default function Home() {
                 <div className="text-[#3A7BFF] text-5xl font-serif mb-4">03</div>
                 <h3 className="text-2xl text-white mb-3">Scale</h3>
                 <p className="text-[#94a3b8] leading-relaxed">
-                  Grow the value. Increase profitability. Build a business that runs without you and is worth 8-12x profit instead of 1-2x.
+                  Grow the value. Increase profitability. Build a business that runs without you — So that you can Retire Without Selling! 😎
                 </p>
               </div>
             </div>
