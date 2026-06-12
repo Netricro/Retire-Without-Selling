@@ -169,6 +169,13 @@ export default function Join() {
                 Peer mastermind, ongoing case studies, shared learning. You are not doing this alone. Learn from people who have been where you are going.
               </p>
             </div>
+            <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
+              <div className="text-[#3A7BFF] text-5xl font-serif mb-4">09</div>
+              <h3 className="text-2xl text-white mb-3">Your Acquisition</h3>
+              <p className="text-[#94a3b8] leading-relaxed flex-grow">
+                When you are ready to acquire, we help you find, structure, and finance the deal. We have done it five times. Now we do it with you.
+              </p>
+            </div>
           </div>
         </div>
       </section>
