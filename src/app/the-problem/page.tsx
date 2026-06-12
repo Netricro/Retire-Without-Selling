@@ -390,7 +390,7 @@ export default function TheProblem() {
             
             <div className="space-y-8 text-lg text-[#94a3b8] leading-relaxed">
               <p>
-                Within months, we help business owners build the systems, structure and leadership required for the business to operate without them.
+                Within months, we help you build the systems, structure and leadership required for the business to operate without them.
               </p>
               <p>
                 Instead of selling your income, you retain it.
