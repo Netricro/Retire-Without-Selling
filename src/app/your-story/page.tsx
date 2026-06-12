@@ -156,7 +156,7 @@ export default function YourStory() {
                   'Selling is not the only way — and often not the best way',
                   'The gap between current value and retirement needs is predictable and fixable',
                   'Building systems and teams is the only sustainable path to value',
-                  'Partnering for equity aligns incentives and creates win-win outcomes',
+                  'You deserve a financially independent retirement. Without selling what you built.',
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="w-8 h-8 rounded-full bg-[#3A7BFF]/20 flex items-center justify-center shrink-0 mt-0.5">
