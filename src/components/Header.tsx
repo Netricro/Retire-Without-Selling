@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useTheme, type Theme } from '@/components/ThemeProvider';
 
 const solutionLinks = [
@@ -74,7 +74,6 @@ export default function Header() {
   const [solutionOpen, setSolutionOpen] = useState(false);
   const pathname = usePathname();
   const { theme, cycle } = useTheme();
-  const router = useRouter();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown when clicking outside
@@ -84,8 +83,8 @@ export default function Header() {
         setSolutionOpen(false);
       }
     }
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
   // Close dropdown on route change
@@ -95,12 +94,6 @@ export default function Header() {
   }, [pathname]);
 
   const isSolutionActive = solutionLinks.some(link => pathname === link.href);
-
-  const handleNavigate = (href: string) => {
-    setMobileMenuOpen(false);
-    setSolutionOpen(false);
-    router.push(href);
-  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
@@ -192,7 +185,7 @@ export default function Header() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-[#94a3b8] hover:text-white rounded-md hover:bg-white/5 transition-colors"
+            className="lg:hidden p-2 text-[#94a3b8] hover:text-white rounded-md hover:bg-white/5 transition-colors touch-manipulation"
             aria-label="Toggle menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -209,12 +202,12 @@ export default function Header() {
 
       {/* Mobile Navigation Menu */}
       {mobileMenuOpen && (
-        <nav className="lg:hidden relative z-50 bg-[#0B0F1A]/95 backdrop-blur-xl border-b border-white/5 max-h-[80vh] overflow-y-auto">
+        <nav className="lg:hidden relative z-50 bg-[#0B0F1A]/95 backdrop-blur-xl border-b border-white/5 max-h-[80vh] overflow-y-auto touch-manipulation">
           <div className="max-w-7xl mx-auto px-4 py-4 space-y-1">
             {/* Mobile: The Solution dropdown */}
             <button
               onClick={() => setSolutionOpen(!solutionOpen)}
-              className={`flex items-center justify-between w-full px-4 py-3 text-sm rounded-md transition-colors ${
+              className={`flex items-center justify-between w-full px-4 py-3 text-sm rounded-md transition-colors touch-manipulation ${
                 isSolutionActive
                   ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
                   : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
@@ -233,37 +226,39 @@ export default function Header() {
             {solutionOpen && (
               <div className="pl-4 space-y-1 border-l border-white/10 ml-4">
                 {solutionLinks.map((link) => (
-                  <button
+                  <a
                     key={link.href}
-                    onClick={() => handleNavigate(link.href)}
-                    className={`block w-full text-left px-4 py-2 text-sm rounded-md transition-colors ${
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`block px-4 py-2 text-sm rounded-md transition-colors min-h-[44px] flex items-center touch-manipulation ${
                       pathname === link.href
                         ? 'text-[#3A7BFF] font-semibold'
                         : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
                     }`}
                   >
                     {link.label}
-                  </button>
+                  </a>
                 ))}
               </div>
             )}
 
             {topLinks.map((link) => (
-              <button
+              <a
                 key={link.href}
-                onClick={() => handleNavigate(link.href)}
-                className={`block w-full text-left px-4 py-3 text-sm rounded-md transition-colors ${
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className={`block px-4 py-3 text-sm rounded-md transition-colors min-h-[44px] flex items-center touch-manipulation ${
                   pathname === link.href
                     ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
                     : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
                 }`}
               >
                 {link.label}
-              </button>
+              </a>
             ))}
             <button
               onClick={() => cycle()}
-              className="flex items-center gap-2 w-full px-4 py-3 text-sm rounded-md text-[#94a3b8] hover:text-white hover:bg-white/5 transition-colors"
+              className="flex items-center gap-2 w-full px-4 py-3 text-sm rounded-md text-[#94a3b8] hover:text-white hover:bg-white/5 transition-colors touch-manipulation"
             >
               <ThemeIcon theme={theme} />
               <span>Theme: {THEME_LABELS[theme]} (tap to switch)</span>
