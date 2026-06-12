@@ -26,11 +26,11 @@ export default function HowItWorks() {
               <span className="gradient-text">Scale.</span>
             </h1>
             <p className="text-xl md:text-2xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-10">
-              Three phases to build a business that runs without you and is worth 8-12x profit instead of 1-2x.
+              These are the three phases we implement in your business to make sure it runs without you and provides you an income forever.
             </p>
             <div className="max-w-2xl mx-auto mt-12 p-8 glass rounded-2xl border border-[#3A7BFF]/20">
               <p className="text-lg text-[#94a3b8] leading-relaxed">
-                Every business is different. Some move faster. Some need more time in stabilisation. The principle is the same: fix the foundation, build the systems, then grow.
+                Every business is different. Some move faster. Some need more time in stabilisation. The principle stays the same: we fix the foundation, build the systems, then grow the value.
               </p>
               <p className="text-lg text-white font-semibold leading-relaxed mt-4">
                 Skip stabilisation and you build on sand. Skip systemisation and you have no scalable value. Skip scaling and you never reach the premium exit.
