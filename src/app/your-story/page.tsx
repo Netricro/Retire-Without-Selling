@@ -175,9 +175,6 @@ export default function YourStory() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#3A7BFF]/10 to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <div className="animate-fade-in-up">
-            <p className="text-[#3A7BFF] text-sm tracking-[0.25em] uppercase font-semibold mb-6">
-              Next Step
-            </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
               See The 5 Deal Killers
             </h2>
