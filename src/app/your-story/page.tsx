@@ -22,8 +22,9 @@ export default function YourStory() {
               Our Story
             </p>
             <h1 className="text-5xl md:text-7xl lg:text-8xl leading-[0.95] mb-8">
-              We lived this<br />
-              <span className="gradient-text">and we help others.</span>
+              We lived this...<br />
+              So Now we help others<br />
+              <span className="gradient-text">Retire Without Selling</span>
             </h1>
             <div className="max-w-3xl mx-auto mt-12 p-8 glass rounded-2xl border border-[#3A7BFF]/20">
               <p className="text-lg text-[#94a3b8] leading-relaxed">
