@@ -173,7 +173,7 @@ export default function Join() {
               <div className="text-[#3A7BFF] text-5xl font-serif mb-4">09</div>
               <h3 className="text-2xl text-white mb-3">Your Acquisition</h3>
               <p className="text-[#94a3b8] leading-relaxed flex-grow">
-                When you are ready to acquire, we help you find, structure, and finance the deal. We have done it five times. Now we do it with you.
+                When you are ready to acquire, we help you find, structure, and finance the deal. We have done it many times. Now we do it with you.
               </p>
             </div>
           </div>
