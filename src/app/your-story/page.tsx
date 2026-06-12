@@ -59,7 +59,7 @@ export default function YourStory() {
                   I faced a choice: sell for a fraction, or find another way. I chose the other way. I partnered with people who understood how to build value, how to systematise, how to create a business that runs without the owner.
                 </p>
                 <p>
-                  Since then, I have worked with hundreds of businesses, acquired five, and seen the same pattern everywhere. The businesses that sell for premium multiples are the ones that run without the owner. The ones that struggle are the ones where the owner is the glue holding everything together.
+                  Since then, I have worked with hundreds of businesses, acquired five, and seen the same pattern everywhere.
                 </p>
               </div>
             </div>
@@ -126,9 +126,6 @@ export default function YourStory() {
                 </p>
                 <p className="text-2xl text-white font-semibold mb-6">
                   We have lived it. We have done it. And now we help other owners do the same.
-                </p>
-                <p className="text-lg text-[#94a3b8] leading-relaxed">
-                  The businesses that sell for premium multiples are the ones that run without the owner. The ones that struggle are the ones where the owner is the glue holding everything together.
                 </p>
               </div>
             </div>
