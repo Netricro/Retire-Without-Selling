@@ -129,9 +129,9 @@ export default function Join() {
             </div>
             <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
               <div className="text-[#3A7BFF] text-5xl font-serif mb-4">03</div>
-              <h3 className="text-2xl text-white mb-3">Assessment Portal</h3>
+              <h3 className="text-2xl text-white mb-3">The Fix Toolkit</h3>
               <p className="text-[#94a3b8] leading-relaxed flex-grow">
-                Full access to the Regenovate portal. Run ASSESS, LEAD, INSPIRE, GROW, NURTURE, and BUILD assessments with your clients. Track progress. Deliver insights.
+                Designed for operators of all backgrounds — not just consultants. Easy to use regardless of experience level. Run tight gap analyses across every area of the business: finance, operations, people, and culture. Know exactly what to fix and when. Actionable insights from the first assessment.
               </p>
             </div>
             <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
