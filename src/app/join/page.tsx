@@ -131,7 +131,7 @@ export default function Join() {
               <div className="text-[#3A7BFF] text-5xl font-serif mb-4">03</div>
               <h3 className="text-2xl text-white mb-3">The Gap Map</h3>
               <p className="text-[#94a3b8] leading-relaxed flex-grow">
-                For operators, not consultants. No experience needed. Pinpoint exactly what to fix across every area of the business.
+                For operators or consultants. Pinpoint exactly what to fix across every area of the business. Building your credibility with the client and their team.
               </p>
             </div>
             <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
