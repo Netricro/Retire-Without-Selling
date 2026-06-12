@@ -25,7 +25,7 @@ export default function Join() {
               <span className="gradient-text">Acquire Later.</span>
             </h1>
             <p className="text-xl md:text-2xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-10">
-              Most consultants spend 12 to 18 months trying to find a business to acquire before they earn a penny. There is a better way.
+              Most new business buyers spend 12 to 18 months trying to find a business to acquire before they earn a penny. There is a better way.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
