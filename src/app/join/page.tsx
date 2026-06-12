@@ -150,9 +150,23 @@ export default function Join() {
             </div>
             <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
               <div className="text-[#3A7BFF] text-5xl font-serif mb-4">06</div>
-              <h3 className="text-2xl text-white mb-3">NetSuite Certification</h3>
+              <h3 className="text-2xl text-white mb-3">The Back Office</h3>
               <p className="text-[#94a3b8] leading-relaxed flex-grow">
-                Optional path to NetSuite certification. Not required, but if you choose to qualify, you can earn consultant fees directly. Extra cash, extra credibility.
+                Proposals, contracts, deal structures, legal templates. You look professional from day one. We handle the paperwork so you can focus on the client.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
+              <div className="text-[#3A7BFF] text-5xl font-serif mb-4">07</div>
+              <h3 className="text-2xl text-white mb-3">Deal Flow</h3>
+              <p className="text-[#94a3b8] leading-relaxed flex-grow">
+                Warm leads and shared opportunities passed around the network. You do not start from zero. We feed you prospects while you build your own pipeline.
+              </p>
+            </div>
+            <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
+              <div className="text-[#3A7BFF] text-5xl font-serif mb-4">08</div>
+              <h3 className="text-2xl text-white mb-3">The Community</h3>
+              <p className="text-[#94a3b8] leading-relaxed flex-grow">
+                Peer mastermind, ongoing case studies, shared learning. You are not doing this alone. Learn from people who have been where you are going.
               </p>
             </div>
           </div>
