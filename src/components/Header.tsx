@@ -13,6 +13,7 @@ const navLinks = [
   { href: '/the-economics', label: 'The Economics' },
   { href: '/your-story', label: 'Our Story' },
   { href: '/deal-killers', label: 'Deal Killers' },
+  { href: '/contact', label: 'Contact Us' },
 ];
 
 const THEME_LABELS: Record<Theme, string> = {
@@ -97,6 +98,13 @@ export default function Header() {
             <span>{THEME_LABELS[theme]}</span>
           </button>
 
+          <a
+            href="/contact"
+            className="px-4 sm:px-5 py-2 border border-[#3A7BFF]/30 text-white text-sm font-semibold rounded-lg hover:bg-[#3A7BFF]/10 transition-colors"
+          >
+            <span className="hidden sm:inline">Contact Us</span>
+            <span className="sm:hidden">Contact</span>
+          </a>
           <a
             href="https://regenovate.com/bsa"
             className="px-4 sm:px-5 py-2 bg-[#3A7BFF] text-white text-sm font-semibold rounded-lg hover:bg-[#2563eb] transition-colors"
