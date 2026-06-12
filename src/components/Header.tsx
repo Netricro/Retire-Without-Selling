@@ -200,71 +200,80 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* Mobile Navigation Menu - Full screen overlay */}
       {mobileMenuOpen && (
-        <nav className="lg:hidden relative z-50 bg-[#0B0F1A]/95 backdrop-blur-xl border-b border-white/5 max-h-[80vh] overflow-y-auto touch-manipulation">
-          <div className="max-w-7xl mx-auto px-4 py-4 space-y-1">
-            {/* Mobile: The Solution dropdown */}
-            <button
-              onClick={() => setSolutionOpen(!solutionOpen)}
-              className={`flex items-center justify-between w-full px-4 py-3 text-sm rounded-md transition-colors touch-manipulation ${
-                isSolutionActive
-                  ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
-                  : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
-              }`}
-            >
-              <span>The Solution</span>
-              <svg
-                className={`w-4 h-4 transition-transform ${solutionOpen ? 'rotate-180' : ''}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {solutionOpen && (
-              <div className="pl-4 space-y-1 border-l border-white/10 ml-4">
-                {solutionLinks.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={`block px-4 py-2 text-sm rounded-md transition-colors min-h-[44px] flex items-center touch-manipulation ${
-                      pathname === link.href
-                        ? 'text-[#3A7BFF] font-semibold'
-                        : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
-                    }`}
-                  >
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-            )}
-
-            {topLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`block px-4 py-3 text-sm rounded-md transition-colors min-h-[44px] flex items-center touch-manipulation ${
-                  pathname === link.href
+        <div
+          className="fixed inset-0 z-[100] lg:hidden"
+          style={{ top: '64px' }}
+        >
+          {/* Backdrop */}
+          <div
+            className="absolute inset-0 bg-black/50"
+            onClick={() => setMobileMenuOpen(false)}
+          />
+          {/* Menu content */}
+          <nav className="relative bg-[#0B0F1A] border-b border-white/10 max-h-[calc(100vh-64px)] overflow-y-auto">
+            <div className="px-4 py-4 space-y-1">
+              {/* Mobile: The Solution dropdown */}
+              <button
+                onClick={() => setSolutionOpen(!solutionOpen)}
+                className={`flex items-center justify-between w-full px-4 py-3 text-sm rounded-md transition-colors ${
+                  isSolutionActive
                     ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
                     : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
                 }`}
               >
-                {link.label}
-              </a>
-            ))}
-            <button
-              onClick={() => cycle()}
-              className="flex items-center gap-2 w-full px-4 py-3 text-sm rounded-md text-[#94a3b8] hover:text-white hover:bg-white/5 transition-colors touch-manipulation"
-            >
-              <ThemeIcon theme={theme} />
-              <span>Theme: {THEME_LABELS[theme]} (tap to switch)</span>
-            </button>
-          </div>
-        </nav>
+                <span>The Solution</span>
+                <svg
+                  className={`w-4 h-4 transition-transform ${solutionOpen ? 'rotate-180' : ''}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {solutionOpen && (
+                <div className="pl-4 space-y-1 border-l border-white/10 ml-4">
+                  {solutionLinks.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      className={`block px-4 py-3 text-sm rounded-md transition-colors ${
+                        pathname === link.href
+                          ? 'text-[#3A7BFF] font-semibold'
+                          : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
+                      }`}
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              )}
+
+              {topLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className={`block px-4 py-3 text-sm rounded-md transition-colors ${
+                    pathname === link.href
+                      ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
+                      : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
+                  }`}
+                >
+                  {link.label}
+                </a>
+              ))}
+              <button
+                onClick={() => cycle()}
+                className="flex items-center gap-2 w-full px-4 py-3 text-sm rounded-md text-[#94a3b8] hover:text-white hover:bg-white/5 transition-colors"
+              >
+                <ThemeIcon theme={theme} />
+                <span>Theme: {THEME_LABELS[theme]} (tap to switch)</span>
+              </button>
+            </div>
+          </nav>
+        </div>
       )}
     </header>
   );
