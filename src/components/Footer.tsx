@@ -14,7 +14,7 @@ export default function Footer() {
           <p>Build to Retire. Partnering for Equity.</p>
         </div>
         <div className="text-[#94a3b8] text-sm">
-          <a href="mailto:ric@regenovate.com" className="hover:text-white transition-colors">ric@regenovate.com</a>
+          <a href="mailto:hello@retire-without-selling.com" className="hover:text-white transition-colors">hello@retire-without-selling.com</a>
         </div>
       </div>
       <div className="text-center mt-8 text-[#94a3b8] text-xs">

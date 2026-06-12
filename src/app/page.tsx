@@ -242,7 +242,7 @@ export default function Home() {
               </svg>
             </a>
             <p className="text-[#94a3b8] mt-6 text-sm">
-              Or <a href="mailto:ric@regenovate.com" className="text-[#3A7BFF] hover:underline">email us</a> to book a discovery call
+              Or <a href="mailto:hello@retire-without-selling.com" className="text-[#3A7BFF] hover:underline">email us</a> to book a discovery call
             </p>
           </div>
         </div>

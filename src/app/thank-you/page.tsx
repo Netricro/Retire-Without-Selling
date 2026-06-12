@@ -42,7 +42,7 @@ export default function ThankYou() {
       </div>
       
       <a
-        href="mailto:ric@regenovate.com?subject=Discovery%20Call%20Request"
+        href="mailto:hello@retire-without-selling.com?subject=Discovery%20Call%20Request"
         className="inline-flex items-center justify-center px-8 py-4 bg-[#3A7BFF] text-white font-semibold rounded-lg hover:bg-[#2563eb] transition-all"
       >
         Book a Discovery Call

@@ -140,7 +140,7 @@ export default function Assessment() {
                 If you would rather have a conversation before taking the assessment, book a discovery call. No pitch, no pressure. Just a conversation about where you are and what options exist.
               </p>
               <a
-                href="mailto:ric@regenovate.com?subject=Discovery%20Call%20Request"
+                href="mailto:hello@retire-without-selling.com?subject=Discovery%20Call%20Request"
                 className="inline-flex items-center justify-center px-10 py-5 border border-[#3A7BFF]/30 text-white text-lg font-semibold rounded-lg hover:bg-[#3A7BFF]/10 transition-all duration-300"
               >
                 Book a Discovery Call
