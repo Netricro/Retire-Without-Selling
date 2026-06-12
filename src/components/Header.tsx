@@ -202,70 +202,67 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile Navigation Menu — rendered as sibling to avoid glass transform clipping */}
+      {/* Mobile Navigation Menu — simple dropdown below header */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-[100] lg:hidden" style={{ top: '64px' }}>
-          <div className="absolute inset-0 bg-black/50" onClick={() => setMobileMenuOpen(false)} />
-          <nav className="relative bg-[#0B0F1A] border-b border-white/10 max-h-[calc(100vh-64px)] overflow-y-auto">
-            <div className="px-4 py-4 space-y-1">
-              <button
-                onClick={() => setSolutionOpen(!solutionOpen)}
-                className={`flex items-center justify-between w-full px-4 py-3 text-sm rounded-md transition-colors ${
-                  isSolutionActive
+        <div className="lg:hidden bg-[#0B0F1A] border-b border-white/10">
+          <div className="max-w-7xl mx-auto px-4 py-4 space-y-1">
+            <button
+              onClick={() => setSolutionOpen(!solutionOpen)}
+              className={`flex items-center justify-between w-full px-4 py-3 text-sm rounded-md transition-colors ${
+                isSolutionActive
+                  ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
+                  : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
+              }`}
+            >
+              <span>The Solution</span>
+              <svg
+                className={`w-4 h-4 transition-transform ${solutionOpen ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {solutionOpen && (
+              <div className="pl-4 space-y-1 border-l border-white/10 ml-4">
+                {solutionLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className={`block px-4 py-3 text-sm rounded-md transition-colors ${
+                      pathname === link.href
+                        ? 'text-[#3A7BFF] font-semibold'
+                        : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            )}
+
+            {topLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className={`block px-4 py-3 text-sm rounded-md transition-colors ${
+                  pathname === link.href
                     ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
                     : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
                 }`}
               >
-                <span>The Solution</span>
-                <svg
-                  className={`w-4 h-4 transition-transform ${solutionOpen ? 'rotate-180' : ''}`}
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-              {solutionOpen && (
-                <div className="pl-4 space-y-1 border-l border-white/10 ml-4">
-                  {solutionLinks.map((link) => (
-                    <a
-                      key={link.href}
-                      href={link.href}
-                      className={`block px-4 py-3 text-sm rounded-md transition-colors ${
-                        pathname === link.href
-                          ? 'text-[#3A7BFF] font-semibold'
-                          : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
-                      }`}
-                    >
-                      {link.label}
-                    </a>
-                  ))}
-                </div>
-              )}
-
-              {topLinks.map((link) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  className={`block px-4 py-3 text-sm rounded-md transition-colors ${
-                    pathname === link.href
-                      ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
-                      : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
-                  }`}
-                >
-                  {link.label}
-                </a>
-              ))}
-              <button
-                onClick={() => cycle()}
-                className="flex items-center gap-2 w-full px-4 py-3 text-sm rounded-md text-[#94a3b8] hover:text-white hover:bg-white/5 transition-colors"
-              >
-                <ThemeIcon theme={theme} />
-                <span>Theme: {THEME_LABELS[theme]} (tap to switch)</span>
-              </button>
-            </div>
-          </nav>
+                {link.label}
+              </a>
+            ))}
+            <button
+              onClick={() => cycle()}
+              className="flex items-center gap-2 w-full px-4 py-3 text-sm rounded-md text-[#94a3b8] hover:text-white hover:bg-white/5 transition-colors"
+            >
+              <ThemeIcon theme={theme} />
+              <span>Theme: {THEME_LABELS[theme]} (tap to switch)</span>
+            </button>
+          </div>
         </div>
       )}
     </>
