@@ -33,7 +33,7 @@ export default function HowItWorks() {
                 Every business is different. Some move faster. Some need more time in stabilisation. The principle stays the same: we fix the foundation, build the systems, then grow the value.
               </p>
               <p className="text-lg text-white font-semibold leading-relaxed mt-4">
-                Skip stabilisation and you build on sand. Skip systemisation and you have no scalable value. Skip scaling and you never reach the premium exit.
+                Skip stabilisation and it falls apart. Skip systemisation and you're still the bottleneck. Skip scaling and it never generates the income that lets you walk away.
               </p>
             </div>
           </div>
