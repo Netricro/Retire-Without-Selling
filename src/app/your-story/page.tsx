@@ -80,7 +80,7 @@ export default function YourStory() {
               What We Have <span className="gradient-text">Built</span>
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center items-start">
               <div className="animate-fade-in-up animation-delay-100">
                 <div className="number-stat">
                   <AnimatedNumber target={500} suffix="+" />
@@ -94,8 +94,8 @@ export default function YourStory() {
                 <p className="text-[#94a3b8] mt-4 text-lg">Businesses acquired</p>
               </div>
               <div className="animate-fade-in-up animation-delay-300">
-                <div className="number-stat">
-                  <span className="text-7xl md:text-8xl font-serif text-[#3A7BFF]">£</span>
+                <div className="number-stat flex items-baseline justify-center gap-1">
+                  <span>£</span>
                   <AnimatedNumber target={100} suffix="M+" />
                 </div>
                 <p className="text-[#94a3b8] mt-4 text-lg">Value created</p>
