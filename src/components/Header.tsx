@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useRef, useEffect } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useTheme, type Theme } from '@/components/ThemeProvider';
 
 const solutionLinks = [
@@ -74,6 +74,7 @@ export default function Header() {
   const [solutionOpen, setSolutionOpen] = useState(false);
   const pathname = usePathname();
   const { theme, cycle } = useTheme();
+  const router = useRouter();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Close dropdown when clicking outside
@@ -94,6 +95,12 @@ export default function Header() {
   }, [pathname]);
 
   const isSolutionActive = solutionLinks.some(link => pathname === link.href);
+
+  const handleNavigate = (href: string) => {
+    setMobileMenuOpen(false);
+    setSolutionOpen(false);
+    router.push(href);
+  };
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/5">
@@ -202,7 +209,7 @@ export default function Header() {
 
       {/* Mobile Navigation Menu */}
       {mobileMenuOpen && (
-        <nav className="lg:hidden bg-[#0B0F1A]/95 backdrop-blur-xl border-b border-white/5 max-h-[80vh] overflow-y-auto">
+        <nav className="lg:hidden relative z-50 bg-[#0B0F1A]/95 backdrop-blur-xl border-b border-white/5 max-h-[80vh] overflow-y-auto">
           <div className="max-w-7xl mx-auto px-4 py-4 space-y-1">
             {/* Mobile: The Solution dropdown */}
             <button
@@ -226,35 +233,33 @@ export default function Header() {
             {solutionOpen && (
               <div className="pl-4 space-y-1 border-l border-white/10 ml-4">
                 {solutionLinks.map((link) => (
-                  <Link
+                  <button
                     key={link.href}
-                    href={link.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={`block px-4 py-2 text-sm rounded-md transition-colors ${
+                    onClick={() => handleNavigate(link.href)}
+                    className={`block w-full text-left px-4 py-2 text-sm rounded-md transition-colors ${
                       pathname === link.href
                         ? 'text-[#3A7BFF] font-semibold'
                         : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
                     }`}
                   >
                     {link.label}
-                  </Link>
+                  </button>
                 ))}
               </div>
             )}
 
             {topLinks.map((link) => (
-              <Link
+              <button
                 key={link.href}
-                href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`block px-4 py-3 text-sm rounded-md transition-colors ${
+                onClick={() => handleNavigate(link.href)}
+                className={`block w-full text-left px-4 py-3 text-sm rounded-md transition-colors ${
                   pathname === link.href
                     ? 'text-[#3A7BFF] bg-[#3A7BFF]/10 font-semibold'
                     : 'text-[#94a3b8] hover:text-white hover:bg-white/5'
                 }`}
               >
                 {link.label}
-              </Link>
+              </button>
             ))}
             <button
               onClick={() => cycle()}
