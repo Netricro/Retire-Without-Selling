@@ -15,7 +15,6 @@ const solutionLinks = [
 
 const topLinks = [
   { href: '/your-story', label: 'Our Story' },
-  { href: '/join', label: 'Recruitment' },
   { href: '/contact', label: 'Contact Us' },
 ];
 
