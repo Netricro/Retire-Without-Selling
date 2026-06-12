@@ -137,19 +137,19 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto pt-8 border-t border-white/10">
                   <div className="flex items-center gap-3">
                     <span className="text-emerald-400 text-xl">✓</span>
-                    <span className="text-white">Keep 80% ownership</span>
+                    <span className="text-white">Keep your business</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="text-emerald-400 text-xl">✓</span>
-                    <span className="text-white">Build to 8-12x profit</span>
+                    <span className="text-white">Keep receiving income</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="text-emerald-400 text-xl">✓</span>
-                    <span className="text-white">Receive ongoing income</span>
+                    <span className="text-white">Step away without selling</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <span className="text-emerald-400 text-xl">✓</span>
-                    <span className="text-white">Exit on your terms</span>
+                    <span className="text-white">Retire on your terms</span>
                   </div>
                 </div>
               </div>
