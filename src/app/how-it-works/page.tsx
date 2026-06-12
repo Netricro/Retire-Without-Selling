@@ -135,7 +135,7 @@ export default function HowItWorks() {
                   </li>
                   <li className="flex items-center gap-3">
                     <span className="text-[#3A7BFF]">—</span>
-                    <span>Prepare for premium exit</span>
+                    <span>Step back and keep the income</span>
                   </li>
                 </ul>
               </div>
