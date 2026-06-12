@@ -296,7 +296,7 @@ export default function HowItWorks() {
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between md:items-center py-6">
                   <span className="text-white text-lg font-semibold mb-2 md:mb-0">Month 36+</span>
-                  <span className="text-[#3A7BFF] font-semibold text-lg">Exit — On your terms</span>
+                  <span className="text-[#3A7BFF] font-semibold text-lg">Enjoy your retirement</span>
                 </div>
               </div>
             </div>
