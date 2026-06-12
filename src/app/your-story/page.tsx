@@ -27,10 +27,10 @@ export default function YourStory() {
             </h1>
             <div className="max-w-3xl mx-auto mt-12 p-8 glass rounded-2xl border border-[#3A7BFF]/20">
               <p className="text-lg text-[#94a3b8] leading-relaxed">
-                I built a profitable business, assumed it was worth what I needed, and the market told me something different. The business was too dependent on me. The systems were in my head. The clients wanted to talk to me, not my team.
+                We built profitable businesses, assumed they were worth what we needed, and the market told us something different. The businesses were too dependent on us. The systems were in our heads. The clients wanted to talk to us, not our teams.
               </p>
               <p className="text-lg text-[#94a3b8] leading-relaxed mt-4">
-                I faced a choice: sell for a fraction, or find another way. I chose the other way. I partnered with people who understood how to build value, how to systematise, how to create a business that runs without the owner.
+                We faced a choice: sell for a fraction, or find another way. We chose the other way. We partnered with people who understood how to build value, how to systematise, how to create a business that runs without the owner.
               </p>
             </div>
           </div>
@@ -53,13 +53,13 @@ export default function YourStory() {
             <div className="glass rounded-2xl p-8 md:p-12 glow-blue border border-[#3A7BFF]/20">
               <div className="space-y-8 text-lg text-[#94a3b8] leading-relaxed">
                 <p>
-                  I built a profitable business, assumed it was worth what I needed, and the market told me something different. The business was too dependent on me. The systems were in my head. The clients wanted to talk to me, not my team.
+                  We built profitable businesses, assumed they were worth what we needed, and the market told us something different. The businesses were too dependent on us. The systems were in our heads. The clients wanted to talk to us, not our teams.
                 </p>
                 <p>
-                  I faced a choice: sell for a fraction, or find another way. I chose the other way. I partnered with people who understood how to build value, how to systematise, how to create a business that runs without the owner.
+                  We faced a choice: sell for a fraction, or find another way. We chose the other way. We partnered with people who understood how to build value, how to systematise, how to create a business that runs without the owner.
                 </p>
                 <p>
-                  Since then, I have worked with hundreds of businesses, acquired five, and seen the same pattern everywhere.
+                  Since then, we have worked with hundreds of businesses, acquired five, and seen the same pattern everywhere.
                 </p>
               </div>
             </div>
