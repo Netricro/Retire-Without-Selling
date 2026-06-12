@@ -2,7 +2,7 @@ import Link from 'next/link';
 import AnimatedNumber from '@/components/AnimatedNumber';
 
 export const metadata = {
-  title: 'Your Story | Retire Without Selling',
+  title: 'Our Story | Retire Without Selling',
   description: 'Ric Wilson lived the Retirement Gap. Now he helps other business owners build value and retire on their own terms.',
 };
 

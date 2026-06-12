@@ -11,7 +11,7 @@ const navLinks = [
   { href: '/the-solution', label: 'The Solution' },
   { href: '/how-it-works', label: 'How It Works' },
   { href: '/the-economics', label: 'The Economics' },
-  { href: '/your-story', label: 'Your Story' },
+  { href: '/your-story', label: 'Our Story' },
   { href: '/deal-killers', label: 'Deal Killers' },
 ];
 
