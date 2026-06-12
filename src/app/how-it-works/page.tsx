@@ -318,7 +318,7 @@ export default function HowItWorks() {
               See The<br /><span className="gradient-text">Economics</span>
             </h2>
             <p className="text-xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-12">
-              Understand how the Build to Retire model transforms your business value — and your retirement income.
+              Understand how the Retire Without Selling model transforms your business value — and your retirement income.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
