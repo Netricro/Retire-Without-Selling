@@ -183,6 +183,21 @@ html[data-theme="light"] body {
   background: #f8fafc;
   color: #0f172a;
 }
+html[data-theme="light"] .text-white,
+html[data-theme="light"] [class*="text-white"] {
+  color: #0f172a !important;
+}
+html[data-theme="light"] .text-\[\#94a3b8\],
+html[data-theme="light"] [class*="text-[#94a3b8]"] {
+  color: #475569 !important;
+}
+html[data-theme="light"] .glass {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+html[data-theme="light"] .border-white\/10 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
 html[data-theme="light"] ::-webkit-scrollbar-track {
   background: #e2e8f0;
 }
@@ -191,10 +206,6 @@ html[data-theme="light"] ::-webkit-scrollbar-thumb {
 }
 html[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
-}
-html[data-theme="light"] .glass {
-  background: rgba(255, 255, 255, 0.8);
-  border-color: rgba(0, 0, 0, 0.08);
 }
 html[data-theme="light"] .section-divider {
   background: linear-gradient(90deg, transparent, rgba(58, 123, 255, 0.3), transparent);
