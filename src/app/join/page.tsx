@@ -117,7 +117,7 @@ export default function Join() {
               <div className="text-[#3A7BFF] text-5xl font-serif mb-4">01</div>
               <h3 className="text-2xl text-white mb-3">White-Label Book</h3>
               <p className="text-[#94a3b8] leading-relaxed flex-grow">
-                A professionally written book: "Build to Retire". Customise with your name and publish as your own. Instant credibility.
+                A professionally written book: "Build to Retire". Customise with your name and publish as your own. Instant credibility — and the greatest lead generation tool you can have in your arsenal.
               </p>
             </div>
             <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
