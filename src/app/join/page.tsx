@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Join Our Network | Retire Without Selling',
-  description: 'Start earning immediately with our toolkit, training, and white-label resources. Built for experienced operators who want to help business owners retire without selling.',
+  title: 'Recruitment | Retire Without Selling',
+  description: 'Join our consultant network. Start earning immediately with our toolkit, training, and white-label resources. Built for experienced operators who want to help business owners retire without selling.',
 };
 
 export default function Join() {
