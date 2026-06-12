@@ -97,7 +97,7 @@ export default function TheSolution() {
 
       <div className="section-divider max-w-4xl mx-auto" />
 
-      {/* SECTION 3: Traditional Sale vs Partnering */}
+      {/* SECTION 3: Traditional Sale vs Retire Without Selling */}
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
@@ -105,21 +105,21 @@ export default function TheSolution() {
               Comparison
             </p>
             <h2 className="text-4xl md:text-5xl mb-12 leading-tight">
-              Traditional Sale vs<br /><span className="gradient-text">Partnering for Equity</span>
+              Traditional Sale vs<br /><span className="gradient-text">Retire Without Selling</span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="glass rounded-xl p-8 border border-red-500/20">
                 <div className="text-red-400 text-sm tracking-wider uppercase font-semibold mb-4">
-                  Typical Sale
+                  Traditional Sale
                 </div>
                 <ul className="space-y-3 text-[#94a3b8]">
                   {[
-                    'Sell for 1-2x profit',
-                    'Walk away with less than you need',
-                    'Lose all future income',
-                    'No control over what happens next',
-                    'Often regret the price',
+                    'Lose 83% of income',
+                    'Lose your security',
+                    'Lose your purpose',
+                    'Deep regret',
+                    'Increased chance of divorce',
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <span className="text-red-400">✗</span>
@@ -130,15 +130,15 @@ export default function TheSolution() {
               </div>
               <div className="glass rounded-xl p-8 border border-emerald-500/20">
                 <div className="text-emerald-400 text-sm tracking-wider uppercase font-semibold mb-4">
-                  Partnering for Equity
+                  Retire Without Selling
                 </div>
                 <ul className="space-y-3 text-[#94a3b8]">
                   {[
-                    'Keep 80% ownership',
-                    'Build to 8-12x profit',
-                    'Receive ongoing income',
-                    'Step back gradually',
-                    'Keep equity, never sell',
+                    'Keep income',
+                    'Retained security',
+                    'Keep your purpose',
+                    'Fewer regrets',
+                    'Sell for 5 times EBIT (if you wish)',
                   ].map((item, i) => (
                     <li key={i} className="flex items-center gap-3">
                       <span className="text-emerald-400">✓</span>
