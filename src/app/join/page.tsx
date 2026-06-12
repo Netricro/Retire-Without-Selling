@@ -198,7 +198,7 @@ export default function Join() {
                   This is not for beginners. We are looking for experienced operators who have built, run, or advised businesses. People who understand what it takes to stabilise, systemise, and scale.
                 </p>
                 <p>
-                  Harbour Club members are our first port of call — because they are the right size, shape, and colour. Credible, capable, and already thinking about the next chapter.
+                  Harbour Club members and high-end consultants are our first port of call — because they have the right stuff. Credible, capable, and already thinking about the next chapter.
                 </p>
                 <p className="text-white font-semibold">
                   If you have operated at scale and want to help others do the same, we should talk.
