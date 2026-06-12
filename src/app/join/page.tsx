@@ -136,9 +136,9 @@ export default function Join() {
             </div>
             <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
               <div className="text-[#3A7BFF] text-5xl font-serif mb-4">04</div>
-              <h3 className="text-2xl text-white mb-3">ERP Referrals</h3>
+              <h3 className="text-2xl text-white mb-3">Shared Commissions</h3>
               <p className="text-[#94a3b8] leading-relaxed flex-grow">
-                Earn referral fees from ERP implementations through our sister company. No technical expertise required. An additional income stream from day one.
+                Your clients need lawyers, accountants, HR, ERP, bookkeepers. Every commission from our expert network goes into a shared pool. You take your cut. Extra income, no extra work.
               </p>
             </div>
             <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
@@ -215,9 +215,9 @@ export default function Join() {
             <div className="animate-fade-in-up animation-delay-200">
               <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10">
                 <div className="text-5xl font-serif text-[#3A7BFF] mb-4">%</div>
-                <h3 className="text-2xl text-white mb-3">ERP Referrals</h3>
+                <h3 className="text-2xl text-white mb-3">Shared Commissions</h3>
                 <p className="text-[#94a3b8] leading-relaxed">
-                  Refer clients to our sister company for NetSuite implementation. Earn referral fees without lifting a technical finger.
+                  Refer clients to our network of lawyers, accountants, HR, ERP, and bookkeepers. Commissions go into a shared pool. You get your share. Extra income, no extra work.
                 </p>
               </div>
             </div>
