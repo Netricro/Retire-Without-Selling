@@ -32,7 +32,7 @@ export default function HowItWorks() {
               <p className="text-lg text-[#94a3b8] leading-relaxed">
                 Every business is different. Some move faster. Some need more time in stabilisation. The principle stays the same: we fix the foundation, build the systems, then grow the value.
               </p>
-              <ul className="space-y-3 text-lg text-white font-semibold leading-relaxed list-disc pl-5 text-left">
+              <ul className="mt-6 space-y-3 text-lg text-white font-semibold leading-relaxed list-disc pl-5 text-left">
                 <li>Skip stabilisation and it falls apart.</li>
                 <li>Skip systemisation and you're still the bottleneck.</li>
                 <li>Skip scaling and it never generates the income that lets you walk away.</li>
