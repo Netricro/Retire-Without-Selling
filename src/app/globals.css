@@ -245,3 +245,477 @@ html[data-theme="midnight"] .glow-blue {
 html[data-theme="midnight"] .number-stat {
   filter: brightness(0.85);
 }
+
+/* ── Print styles for assessment ─────────────────────────────────── */
+
+@media screen {
+  .no-print {
+    display: block !important;
+  }
+  .print-only {
+    display: none !important;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+
+  [class*="motion-"],
+  [style*="opacity: 0"] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .scorecard-report {
+    font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
+    color: #0A1F44;
+    background: #fff;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .report-cover {
+    page-break-after: always;
+    min-height: 270mm;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background: #0A1F44 !important;
+    color: white;
+    position: relative;
+  }
+
+  .report-cover .logo {
+    font-size: 42pt;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+    color: white !important;
+  }
+
+  .report-cover .tagline {
+    font-size: 11pt;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.95) !important;
+    margin-bottom: 50px;
+    font-weight: 500;
+  }
+
+  .report-cover h1 {
+    font-size: 28pt;
+    font-weight: 400;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: white !important;
+  }
+
+  .report-cover .subtitle {
+    font-size: 13pt;
+    color: rgba(255,255,255,0.9) !important;
+    margin-bottom: 60px;
+    max-width: 450px;
+    line-height: 1.5;
+  }
+
+  .report-cover .meta {
+    font-size: 11pt;
+    color: rgba(255,255,255,0.85) !important;
+    border-top: 1px solid rgba(255,255,255,0.4);
+    padding-top: 25px;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .meta-label {
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.7) !important;
+  }
+
+  .meta-value {
+    font-size: 12pt;
+    font-weight: 600;
+    color: white !important;
+  }
+
+  .meta-company {
+    font-size: 10pt;
+    color: rgba(255,255,255,0.85) !important;
+  }
+
+  .meta-divider {
+    width: 1px;
+    height: 35px;
+    background: rgba(255,255,255,0.4);
+  }
+
+  .confidential-stamp {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border: 2px solid rgba(255,255,255,0.5);
+    padding: 8px 16px;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(255,255,255,0.8) !important;
+    transform: rotate(-5deg);
+  }
+
+  .cover-accent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, #3B82F6 0%, #1F5EDC 50%, #059669 100%);
+  }
+
+  .report-summary {
+    page-break-after: always;
+    padding: 32px;
+  }
+
+  .report-summary .section-header {
+    border-bottom: 3px solid #0A1F44;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+
+  .report-summary h2 {
+    font-size: 22pt;
+    color: #0A1F44;
+    margin: 0;
+  }
+
+  .score-hero {
+    text-align: center;
+    margin: 20px 0;
+    padding: 24px;
+    background: #f8fafc;
+    border-radius: 12px;
+    page-break-inside: avoid;
+  }
+
+  .score-circle-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+  }
+
+  .score-circle-svg {
+    width: 140px;
+    height: 140px;
+    transform: rotate(-90deg);
+  }
+
+  .score-circle-bg {
+    fill: none;
+    stroke: #e2e8f0;
+    stroke-width: 8;
+  }
+
+  .score-circle-progress {
+    fill: none;
+    stroke: #1F5EDC;
+    stroke-width: 8;
+    stroke-linecap: round;
+  }
+
+  .score-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .score-divider {
+    margin: 0 4px;
+    opacity: 0.3;
+  }
+
+  .score-assessment {
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    color: #0A1F44 !important;
+  }
+
+  .key-insight {
+    background: #f8fafc;
+    border-left: 4px solid #1F5EDC;
+    padding: 20px 25px;
+    margin: 25px 0;
+    page-break-inside: avoid;
+  }
+
+  .insight-label {
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #1F5EDC;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .insight-text {
+    font-size: 10pt;
+    line-height: 1.6;
+    color: #334155;
+    margin: 0;
+  }
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0;
+    page-break-inside: avoid;
+  }
+
+  .category-card {
+    background: #f8fafc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    border-top: 4px solid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .category-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .category-header-row h3 {
+    font-size: 14pt;
+    margin: 0;
+    color: #0A1F44;
+  }
+
+  .category-subtitle {
+    font-size: 8pt;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+  }
+
+  .score-gauge {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    overflow: visible;
+  }
+
+  .score-gauge svg {
+    width: 80px;
+    height: 80px;
+    overflow: visible;
+  }
+
+  .gauge-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .gauge-score {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #0A1F44;
+  }
+
+  .gauge-max {
+    font-size: 8pt;
+    color: #94a3b8;
+  }
+
+  .feedback-section {
+    page-break-before: always;
+    padding: 32px;
+  }
+
+  .feedback-header {
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .feedback-header h3 {
+    font-size: 18pt;
+    color: #0A1F44;
+    margin: 0;
+  }
+
+  .feedback-header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .section-number {
+    font-size: 28pt;
+    font-weight: 700;
+    color: #cbd5e1;
+    line-height: 1;
+  }
+
+  .feedback-subtitle {
+    font-size: 9pt;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .feedback-item {
+    page-break-inside: avoid;
+  }
+
+  .fb-label {
+    font-size: 11pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+  }
+
+  .fb-title {
+    font-size: 15pt;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 6px;
+  }
+
+  .fb-text {
+    font-size: 13pt;
+    color: #475569;
+    line-height: 1.6;
+  }
+
+  .action-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .action-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    background: #f8fafc;
+    border-left: 3px solid #1F5EDC;
+    page-break-inside: avoid;
+  }
+
+  .action-number {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #1F5EDC;
+    min-width: 18px;
+  }
+
+  .action-text {
+    font-size: 9pt;
+    color: #475569;
+    line-height: 1.4;
+  }
+
+  .report-final {
+    page-break-before: always;
+    min-height: 270mm;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background: #0A1F44 !important;
+    color: white;
+  }
+
+  .final-content {
+    max-width: 450px;
+  }
+
+  .final-logo {
+    font-size: 32pt;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 35px;
+    color: white !important;
+  }
+
+  .report-final h2 {
+    font-size: 24pt;
+    font-weight: 400;
+    margin-bottom: 18px;
+    line-height: 1.3;
+    color: white !important;
+  }
+
+  .final-text {
+    font-size: 12pt;
+    color: rgba(255,255,255,0.9) !important;
+    line-height: 1.6;
+    margin-bottom: 35px;
+  }
+
+  .final-contact {
+    font-size: 11pt;
+    color: rgba(255,255,255,0.85) !important;
+    line-height: 1.8;
+  }
+
+  .final-footer {
+    margin-top: auto;
+    padding-top: 35px;
+    font-size: 9pt;
+    color: rgba(255,255,255,0.7) !important;
+  }
+
+  .confidential-badge {
+    display: inline-block;
+    border: 1px solid #0A1F44;
+    padding: 8px 20px;
+    font-size: 8pt;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 20px;
+  }
+}
