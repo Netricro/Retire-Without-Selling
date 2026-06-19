@@ -20,6 +20,15 @@ export default function AnimatedNumber({
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // If element is already in viewport on mount, animate immediately
+    if (ref.current) {
+      const rect = ref.current.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        setHasAnimated(true);
+        return;
+      }
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
