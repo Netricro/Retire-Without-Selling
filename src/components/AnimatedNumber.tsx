@@ -17,7 +17,7 @@ export default function AnimatedNumber({
 }: AnimatedNumberProps) {
   const [count, setCount] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
-  const ref = useRef<HTMLSpanElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,7 +28,7 @@ export default function AnimatedNumber({
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.1 }
     );
 
     if (ref.current) {
@@ -69,9 +69,11 @@ export default function AnimatedNumber({
   }, [hasAnimated, target, duration]);
 
   return (
-    <span ref={ref} className={`tabular-nums ${className}`}>
-      {count}
-      {suffix}
-    </span>
+    <div ref={ref}>
+      <span className={`tabular-nums ${className}`}>
+        {count}
+        {suffix}
+      </span>
+    </div>
   );
 }

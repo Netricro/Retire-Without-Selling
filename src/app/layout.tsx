@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Retire Without Selling Your Business",
     description: "Build a business that runs without you, so you can step away, keep your equity, and continue receiving income throughout retirement. Partner for equity. Build value. Step back.",
   },
-  keywords: ["Retire Without Selling", "Build to Retire", "Partnering for Equity", "Business Exit Strategy", "UK Business Owners", "Retirement Planning", "Business Value Gap", "Exit Without Selling"],
+  keywords: ["Retire Without Selling", "Build to Retire", "Business Exit Strategy", "UK Business Owners", "Retirement Planning", "Business Value Gap", "Exit Without Selling"],
 };
 
 export default function RootLayout({

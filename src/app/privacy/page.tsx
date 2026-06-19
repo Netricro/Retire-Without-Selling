@@ -24,12 +24,12 @@ export default function PrivacyPolicy() {
               </p>
 
               <p>
-                This Privacy Policy describes how Regenovate Limited ("we", "us", or "our") collects, uses, and protects your personal information when you use the Retire Without Selling website.
+                This Privacy Policy describes how the operator of this website ("we", "us", or "our") collects, uses, and protects your personal information when you use the Retire Without Selling website.
               </p>
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">1. Who We Are</h2>
               <p>
-                Regenovate Limited is a company registered in England and Wales (Company Number: 15339923). Our registered address is The Wellington, High Street, Uttoxeter, England, ST14 7JD. We are the data controller for the personal information collected through this website.
+                We are a company registered in England and Wales (Company Number: 15339923). Our registered address is The Wellington, High Street, Uttoxeter, England, ST14 7JD. We are the data controller for the personal information collected through this website.
               </p>
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">2. What Information We Collect</h2>
@@ -99,7 +99,7 @@ export default function PrivacyPolicy() {
               </p>
               <p className="mt-4">
                 <strong className="text-white">Email:</strong> <a href="mailto:hello@retire-without-selling.com" className="text-[#3A7BFF] hover:underline">hello@retire-without-selling.com</a><br />
-                <strong className="text-white">Address:</strong> Regenovate Limited, The Wellington, High Street, Uttoxeter, England, ST14 7JD
+                <strong className="text-white">Address:</strong> The Wellington, High Street, Uttoxeter, England, ST14 7JD
               </p>
             </div>
           </div>

@@ -24,7 +24,7 @@ export default function Terms() {
               </p>
 
               <p>
-                Please read these Terms and Conditions carefully before using the Retire Without Selling website operated by Regenovate Limited.
+                Please read these Terms and Conditions carefully before using the Retire Without Selling website operated by the operator of this website.
               </p>
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">1. Acceptance of Terms</h2>
@@ -34,7 +34,7 @@ export default function Terms() {
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">2. About Us</h2>
               <p>
-                This website is operated by Regenovate Limited, a company registered in England and Wales (Company Number: 15339923). Our registered address is The Wellington, High Street, Uttoxeter, England, ST14 7JD.
+                This website is operated by a company registered in England and Wales (Company Number: 15339923). Our registered address is The Wellington, High Street, Uttoxeter, England, ST14 7JD.
               </p>
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">3. Use of the Website</h2>
@@ -44,7 +44,7 @@ export default function Terms() {
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">4. Intellectual Property</h2>
               <p>
-                All content on this website, including text, graphics, logos, images, and software, is the property of Regenovate Limited or its content suppliers and is protected by UK and international copyright laws. You may not reproduce, modify, distribute, or republish any content from this website without our prior written consent.
+                All content on this website, including text, graphics, logos, images, and software, is the property of the operator of this website or its content suppliers and is protected by UK and international copyright laws. You may not reproduce, modify, distribute, or republish any content from this website without our prior written consent.
               </p>
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">5. Disclaimer</h2>
@@ -57,7 +57,7 @@ export default function Terms() {
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">6. Limitation of Liability</h2>
               <p>
-                To the extent permitted by law, Regenovate Limited shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to or use of this website or any content on it.
+                To the extent permitted by law, the operator of this website shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising out of your access to or use of this website or any content on it.
               </p>
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">7. External Links</h2>

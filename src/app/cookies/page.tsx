@@ -24,7 +24,7 @@ export default function CookiePolicy() {
               </p>
 
               <p>
-                This Cookie Policy explains how Regenovate Limited uses cookies and similar technologies on the Retire Without Selling website.
+                This Cookie Policy explains how the operator of this website uses cookies and similar technologies on the Retire Without Selling website.
               </p>
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">1. What Are Cookies?</h2>

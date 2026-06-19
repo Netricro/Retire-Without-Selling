@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Free Assessment | Retire Without Selling',
-  description: 'Take our free 5-minute Business Sale Assessment. Shows you exactly where your business stands, what the gap is, and what steps to take next.',
+  description: 'Book a free discovery call to assess where your business stands, understand the retirement gap, and learn what steps to take next.',
 };
 
 export default function Assessment() {
@@ -23,7 +23,7 @@ export default function Assessment() {
               <span className="gradient-text">You Stand</span>
             </h1>
             <p className="text-xl md:text-2xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-10">
-              Take our free 5-minute Business Sale Assessment. It shows you exactly where your business is today, what the gap is, and what steps to take next.
+              Book a free discovery call. We will assess where your business is today, show you the gap, and outline exactly what steps to take next.
             </p>
             <p className="text-lg text-[#94a3b8]/70 max-w-2xl mx-auto leading-relaxed">
               No pitch. Just clarity.
@@ -39,7 +39,7 @@ export default function Assessment() {
         <div className="max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
             <p className="text-[#3A7BFF] text-sm tracking-[0.25em] uppercase font-semibold mb-6">
-              Your Report
+              Your Call
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-12 leading-tight">
               What You Get
@@ -63,8 +63,8 @@ export default function Assessment() {
                       desc: 'Prioritised actions that will increase your business value the fastest.',
                     },
                     {
-                      title: 'No obligation, no sales call, no spam',
-                      desc: 'Your results are yours alone. No follow-up pressure.',
+                      title: 'No obligation, no sales pressure, no spam',
+                      desc: 'Your call is yours alone. No follow-up pressure unless you ask for it.',
                     },
                   ].map((item, index) => (
                     <div
@@ -104,16 +104,16 @@ export default function Assessment() {
               Get Started
             </p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-              Start The Free<br /><span className="gradient-text">Assessment</span>
+              Book Your Free<br /><span className="gradient-text">Discovery Call</span>
             </h2>
             <p className="text-xl text-[#94a3b8] max-w-2xl mx-auto leading-relaxed mb-12">
-              Takes 5 minutes. Instant results. No email required unless you want to save your report.
+              Takes 30 minutes. No preparation needed. Just bring your numbers and your questions.
             </p>
             <a
-              href="https://regenovate.com/bsa"
+              href="mailto:hello@retire-without-selling.com?subject=Discovery%20Call%20Request"
               className="inline-flex items-center justify-center px-12 py-6 bg-[#3A7BFF] text-white text-xl font-semibold rounded-lg hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#3A7BFF]/20"
             >
-              Start The Free Assessment
+              Book Your Discovery Call
               <svg className="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
@@ -124,7 +124,7 @@ export default function Assessment() {
 
       <div className="section-divider max-w-4xl mx-auto" />
 
-      {/* SECTION 4: Prefer to Talk First? */}
+      {/* SECTION 4: Prefer Email? */}
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="animate-fade-in-up">
@@ -132,18 +132,18 @@ export default function Assessment() {
               Alternative
             </p>
             <h2 className="text-4xl md:text-5xl mb-8 leading-tight">
-              Prefer to Talk First?
+              Prefer to Email First?
             </h2>
 
             <div className="glass rounded-2xl p-8 md:p-12 border border-[#3A7BFF]/20">
               <p className="text-xl text-[#94a3b8] leading-relaxed mb-8">
-                If you would rather have a conversation before taking the assessment, book a discovery call. No pitch, no pressure. Just a conversation about where you are and what options exist.
+                If you would rather start by email, send us a brief note about your business and your situation. We will reply within one business day with next steps.
               </p>
               <a
-                href="mailto:hello@retire-without-selling.com?subject=Discovery%20Call%20Request"
+                href="mailto:hello@retire-without-selling.com?subject=Free%20Assessment%20Enquiry"
                 className="inline-flex items-center justify-center px-10 py-5 border border-[#3A7BFF]/30 text-white text-lg font-semibold rounded-lg hover:bg-[#3A7BFF]/10 transition-all duration-300"
               >
-                Book a Discovery Call
+                Send an Email
               </a>
             </div>
           </div>

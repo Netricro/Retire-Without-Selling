@@ -28,7 +28,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://regenovate.com/bsa"
+                href="/assessment"
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#3A7BFF] text-white font-semibold rounded-lg hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#3A7BFF]/20"
               >
                 Take the Free 5-Min Assessment
@@ -233,7 +233,7 @@ export default function Home() {
               Take our free 5-minute Business Sale Assessment. No pitch. Just clarity.
             </p>
             <a
-              href="https://regenovate.com/bsa"
+              href="/assessment"
               className="inline-flex items-center justify-center px-10 py-5 bg-[#3A7BFF] text-white text-lg font-semibold rounded-lg hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#3A7BFF]/20"
             >
               Take the Free 5-Min Assessment

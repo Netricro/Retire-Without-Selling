@@ -3,7 +3,7 @@ import RetirementGapCalculator from '@/components/RetirementGapCalculator';
 
 export const metadata = {
   title: 'The Economics | Retire Without Selling',
-  description: 'The real numbers: why selling today for 1-2x profit means leaving millions on the table. See how partnering for equity builds 8-12x value over 3-5 years.',
+  description: 'The real numbers: why selling today for 1-2x profit means leaving millions on the table. See how building a business that runs without you creates 8-12x value over 3-5 years.',
 };
 
 export default function TheEconomics() {
@@ -75,7 +75,7 @@ export default function TheEconomics() {
                 </svg>
               </Link>
               <Link
-                href="https://regenovate.com/bsa"
+                href="/assessment"
                 className="inline-flex items-center justify-center px-10 py-5 border border-[#3A7BFF]/30 text-white text-lg font-semibold rounded-xl hover:bg-[#3A7BFF]/10 transition-all duration-300"
               >
                 Take the Free Assessment

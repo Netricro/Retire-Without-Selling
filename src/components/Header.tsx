@@ -178,7 +178,7 @@ export default function Header() {
               Contact Us
             </a>
             <a
-              href="https://regenovate.com/bsa"
+              href="/assessment"
               className="px-4 sm:px-5 py-2 bg-[#3A7BFF] text-white text-sm font-semibold rounded-lg hover:bg-[#2563eb] transition-colors"
             >
               <span className="hidden sm:inline">Free Assessment</span>

@@ -123,7 +123,7 @@ export default function YourStory() {
               <div className="absolute top-0 left-0 w-1 h-full bg-[#3A7BFF]" />
               <div className="pl-6">
                 <p className="text-2xl text-white font-light mb-6">
-                  We developed the <strong className="text-[#3A7BFF]">Build to Retire</strong> methodology and the <strong className="text-[#3A7BFF]">Partnering for Equity</strong> model to solve this exact problem.
+                  We developed the <strong className="text-[#3A7BFF]">Build to Retire</strong> methodology and the <strong className="text-[#3A7BFF]">Earned Equity</strong> model to solve this exact problem.
                 </p>
                 <p className="text-2xl text-white font-semibold mb-6">
                   We have lived it. We have done it. And now we help other owners do the same.

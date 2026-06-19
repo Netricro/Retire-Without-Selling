@@ -192,11 +192,11 @@ export default function TheSolution() {
               Ready to Build a<br />Business That Runs<br /><span className="gradient-text">Without You?</span>
             </h2>
             <p className="text-xl text-[#94a3b8] max-w-3xl mx-auto leading-relaxed mb-12">
-              Discover how partnering for equity can help you step back, keep your income, and build a business that runs without you.
+              Discover how our partnership approach can help you step back, keep your income, and build a business that runs without you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://regenovate.com/bsa"
+                href="/assessment"
                 className="inline-flex items-center justify-center px-10 py-5 bg-[#3A7BFF] text-white text-lg font-semibold rounded-lg hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#3A7BFF]/20"
               >
                 Book Your Assessment

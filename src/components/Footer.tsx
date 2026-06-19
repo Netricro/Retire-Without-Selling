@@ -30,7 +30,7 @@ export default function Footer() {
           <span>Company Number: 15339923</span>
         </div>
         <div className="text-center mt-6 text-[#94a3b8] text-xs">
-          © 2026 Regenovate Limited. All rights reserved.
+          © 2026 All rights reserved.
         </div>
       </div>
     </footer>
