@@ -77,7 +77,7 @@ export default function Terms() {
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">10. Contact Us</h2>
               <p>
-                If you have any questions about these Terms and Conditions, please contact us at <a href="mailto:hello@retire-without-selling.com" className="text-[#3A7BFF] hover:underline">hello@retire-without-selling.com</a>.
+                If you have any questions about these Terms and Conditions, please contact us at <a href="mailto:hello@retirewithoutselling.com" className="text-[#3A7BFF] hover:underline">hello@retirewithoutselling.com</a>.
               </p>
             </div>
           </div>

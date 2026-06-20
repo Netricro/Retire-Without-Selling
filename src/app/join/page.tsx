@@ -29,7 +29,7 @@ export default function Join() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:hello@retire-without-selling.com?subject=Consultant Network Enquiry"
+                href="mailto:hello@retirewithoutselling.com?subject=Consultant Network Enquiry"
                 className="inline-flex items-center justify-center px-10 py-5 bg-[#3A7BFF] text-white text-lg font-semibold rounded-lg hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#3A7BFF]/20"
               >
                 Join the Network
@@ -124,7 +124,7 @@ export default function Join() {
               <div className="text-[#3A7BFF] text-5xl font-serif mb-4">02</div>
               <h3 className="text-2xl text-white mb-3">Bespoke Website</h3>
               <p className="text-[#94a3b8] leading-relaxed flex-grow">
-                A branded version of this site, tailored to your niche and geography. Example: <em>retire-without-selling.com/engineering-nw</em>. Looks like you built it.
+                A branded version of this site, tailored to your niche and geography. Example: <em>retirewithoutselling.com/engineering-nw</em>. Looks like you built it.
               </p>
             </div>
             <div className="glass rounded-2xl p-8 glow-blue border border-[#3A7BFF]/10 h-full flex flex-col">
@@ -270,7 +270,7 @@ export default function Join() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:hello@retire-without-selling.com?subject=Consultant Network Application"
+                href="mailto:hello@retirewithoutselling.com?subject=Consultant Network Application"
                 className="inline-flex items-center justify-center px-10 py-5 bg-[#3A7BFF] text-white text-lg font-semibold rounded-lg hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#3A7BFF]/20"
               >
                 Apply to Join the Network

@@ -80,7 +80,7 @@ export default function PrivacyPolicy() {
                 <li>Withdraw consent at any time</li>
               </ul>
               <p className="mt-4">
-                To exercise these rights, contact us at <a href="mailto:hello@retire-without-selling.com" className="text-[#3A7BFF] hover:underline">hello@retire-without-selling.com</a>.
+                To exercise these rights, contact us at <a href="mailto:hello@retirewithoutselling.com" className="text-[#3A7BFF] hover:underline">hello@retirewithoutselling.com</a>.
               </p>
 
               <h2 className="text-2xl text-white font-semibold mt-8 mb-4">7. Data Retention</h2>
@@ -98,7 +98,7 @@ export default function PrivacyPolicy() {
                 If you have any questions about this Privacy Policy or how we handle your data, please contact us:
               </p>
               <p className="mt-4">
-                <strong className="text-white">Email:</strong> <a href="mailto:hello@retire-without-selling.com" className="text-[#3A7BFF] hover:underline">hello@retire-without-selling.com</a><br />
+                <strong className="text-white">Email:</strong> <a href="mailto:hello@retirewithoutselling.com" className="text-[#3A7BFF] hover:underline">hello@retirewithoutselling.com</a><br />
                 <strong className="text-white">Address:</strong> The Wellington, High Street, Uttoxeter, England, ST14 7JD
               </p>
             </div>

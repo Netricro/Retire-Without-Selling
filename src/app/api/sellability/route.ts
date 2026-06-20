@@ -9,8 +9,8 @@ import {
 import nodemailer from "nodemailer";
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const FROM_EMAIL = process.env.FROM_EMAIL || "hello@retire-without-selling.com";
-const TO_EMAIL = process.env.SELLABILITY_NOTIFICATION_EMAIL || "hello@retire-without-selling.com";
+const FROM_EMAIL = process.env.FROM_EMAIL || "hello@retirewithoutselling.com";
+const TO_EMAIL = process.env.SELLABILITY_NOTIFICATION_EMAIL || "hello@retirewithoutselling.com";
 
 const SMTP_HOST = process.env.SMTP_HOST;
 const SMTP_PORT = parseInt(process.env.SMTP_PORT || "587");
@@ -157,14 +157,14 @@ function generateEmailHTML(data: SellabilityData): string {
       <div class="cta">
         <h3 class="cta-title">${tier.cta}</h3>
         <p class="cta-text">Book a confidential call to review these results with our team and discuss how we can support your exit journey.</p>
-        <a href="https://retire-without-selling.vercel.app/contact" class="cta-button">Schedule Your Call</a>
+        <a href="https://retirewithoutselling.vercel.app/contact" class="cta-button">Schedule Your Call</a>
       </div>
     </div>
     <div class="footer">
       <p class="footer-text">Confidential — prepared for ${data.name}${data.company ? `, ${data.company}` : ""}</p>
       <div class="footer-links">
-        <a href="https://retire-without-selling.vercel.app">retire-without-selling.vercel.app</a>
-        <a href="mailto:hello@retire-without-selling.com">hello@retire-without-selling.com</a>
+        <a href="https://retirewithoutselling.vercel.app">retirewithoutselling.vercel.app</a>
+        <a href="mailto:hello@retirewithoutselling.com">hello@retirewithoutselling.com</a>
       </div>
     </div>
   </div>
@@ -189,7 +189,7 @@ async function sendEmailWithSMTP(data: SellabilityData, html: string): Promise<v
     to: [data.email, TO_EMAIL],
     subject: `Business Sellability Score — ${data.totalScore}/80`,
     html,
-    text: `Business Sellability Assessment\n\nOverall Score: ${data.totalScore}/80\n\n${categoryOrder.map((cat) => `${cat}: ${data.scores[cat] || 0}/${sellabilityCategoryConfig[cat]?.maxScore || 16}`).join("\n")}\n\nView full report at retire-without-selling.vercel.app`,
+    text: `Business Sellability Assessment\n\nOverall Score: ${data.totalScore}/80\n\n${categoryOrder.map((cat) => `${cat}: ${data.scores[cat] || 0}/${sellabilityCategoryConfig[cat]?.maxScore || 16}`).join("\n")}\n\nView full report at retirewithoutselling.vercel.app`,
   });
 }
 

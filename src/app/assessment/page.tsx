@@ -555,8 +555,8 @@ export default function SellabilityPage() {
                   <h2>Build to Retire</h2>
                   <p className="final-text">{tier.cta} Book a confidential call to review these results with our team and discuss how we can support your exit journey.</p>
                   <div className="final-contact">
-                    <p>retire-without-selling.vercel.app</p>
-                    <p>hello@retire-without-selling.com</p>
+                    <p>retirewithoutselling.vercel.app</p>
+                    <p>hello@retirewithoutselling.com</p>
                   </div>
                 </div>
                 <div className="final-footer">
@@ -736,7 +736,7 @@ export default function SellabilityPage() {
                         const result = computeScores();
                         const totalScore = Object.values(result.scores).reduce((a, b) => a + b, 0);
                         trackBSACallbackRequest(getSellabilityTier(totalScore), totalScore);
-                        window.location.href = "mailto:hello@retire-without-selling.com?subject=Callback Request - BSA Results&body=Please call me to discuss my Business Sellability Assessment results.";
+                        window.location.href = "mailto:hello@retirewithoutselling.com?subject=Callback Request - BSA Results&body=Please call me to discuss my Business Sellability Assessment results.";
                       }}
                       className="px-8 py-3 bg-[#0f172a]/80 hover:bg-[#1e293b]/80 text-[#94a3b8] font-medium tracking-wide rounded-xl transition-all border border-white/10 text-sm whitespace-nowrap text-center"
                     >
@@ -770,7 +770,7 @@ export default function SellabilityPage() {
 
               <div className="print-only print-footer">
                 <p>
-                  <strong>Retire Without Selling</strong> | retire-without-selling.vercel.app | hello@retire-without-selling.com<br />
+                  <strong>Retire Without Selling</strong> | retirewithoutselling.vercel.app | hello@retirewithoutselling.com<br />
                   The Wellington, High Street, Uttoxeter, England, ST14 7JD<br />
                   This report is confidential and intended solely for {name}{company ? ` at ${company}` : ""}.
                 </p>

@@ -59,7 +59,7 @@ export default function Contact() {
                 </div>
                 <div className="mt-auto">
                   <a
-                    href="mailto:hello@retire-without-selling.com?subject=Discovery%20Call%20Request"
+                    href="mailto:hello@retirewithoutselling.com?subject=Discovery%20Call%20Request"
                     className="inline-flex items-center justify-center w-full px-8 py-5 bg-[#3A7BFF] text-white text-lg font-semibold rounded-lg hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#3A7BFF]/20"
                   >
                     Request a Call
@@ -85,10 +85,10 @@ export default function Contact() {
                 </div>
                 <div className="mt-auto">
                   <a
-                    href="mailto:hello@retire-without-selling.com"
+                    href="mailto:hello@retirewithoutselling.com"
                     className="inline-flex items-center justify-center w-full px-8 py-5 border border-[#3A7BFF]/30 text-white text-lg font-semibold rounded-lg hover:bg-[#3A7BFF]/10 transition-all duration-300"
                   >
-                    hello@retire-without-selling.com
+                    hello@retirewithoutselling.com
                     <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -160,7 +160,7 @@ export default function Contact() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:hello@retire-without-selling.com?subject=Discovery%20Call%20Request"
+                href="mailto:hello@retirewithoutselling.com?subject=Discovery%20Call%20Request"
                 className="inline-flex items-center justify-center px-10 py-5 bg-[#3A7BFF] text-white text-lg font-semibold rounded-lg hover:bg-[#2563eb] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#3A7BFF]/20"
               >
                 Request a Discovery Call

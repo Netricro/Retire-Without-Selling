@@ -15,7 +15,7 @@ export default function Footer() {
             <p>Retire Without Selling. Keep your equity. Keep your income.</p>
           </div>
           <div className="text-[#94a3b8] text-sm">
-            <a href="mailto:hello@retire-without-selling.com" className="hover:text-white transition-colors">hello@retire-without-selling.com</a>
+            <a href="mailto:hello@retirewithoutselling.com" className="hover:text-white transition-colors">hello@retirewithoutselling.com</a>
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-4 mt-8 text-[#94a3b8] text-xs">
