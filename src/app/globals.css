@@ -226,24 +226,42 @@ html[data-theme="light"] .number-stat {
 
 /* MIDNIGHT THEME */
 html[data-theme="midnight"] body {
-  background: #05070a;
-  color: #e2e8f0;
+  background: #030610;
+  color: #94a3b8;
+}
+html[data-theme="midnight"] .text-white,
+html[data-theme="midnight"] [class*="text-white"] {
+  color: #cbd5e1 !important;
+}
+html[data-theme="midnight"] .text-\[\#94a3b8\],
+html[data-theme="midnight"] [class*="text-[#94a3b8]"] {
+  color: #64748b !important;
 }
 html[data-theme="midnight"] ::-webkit-scrollbar-track {
-  background: #0a0d14;
+  background: #080c18;
+}
+html[data-theme="midnight"] ::-webkit-scrollbar-thumb {
+  background: #1e293b;
 }
 html[data-theme="midnight"] .glass {
-  background: rgba(10, 13, 20, 0.8);
-  border-color: rgba(255, 255, 255, 0.04);
+  background: rgba(6, 10, 20, 0.85);
+  border-color: rgba(255, 255, 255, 0.03);
+}
+html[data-theme="midnight"] .border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.05) !important;
 }
 html[data-theme="midnight"] .section-divider {
-  background: linear-gradient(90deg, transparent, rgba(58, 123, 255, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(58, 123, 255, 0.15), transparent);
 }
 html[data-theme="midnight"] .glow-blue {
-  box-shadow: 0 0 40px rgba(58, 123, 255, 0.1);
+  box-shadow: 0 0 40px rgba(58, 123, 255, 0.06);
 }
 html[data-theme="midnight"] .number-stat {
-  filter: brightness(0.85);
+  filter: brightness(0.7);
+}
+html[data-theme="midnight"] ::selection {
+  background: rgba(58, 123, 255, 0.2);
+  color: #e2e8f0;
 }
 
 /* ── Print styles for assessment ─────────────────────────────────── */

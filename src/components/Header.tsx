@@ -19,9 +19,9 @@ const topLinks = [
 ];
 
 const THEME_LABELS: Record<Theme, string> = {
-  dark: "Dark",
-  light: "Light",
-  midnight: "Midnight",
+  dark: "Dark Theme",
+  light: "Light Theme",
+  midnight: "Midnight Theme",
 };
 
 const THEME_NEXT: Record<Theme, Theme> = {
@@ -262,7 +262,7 @@ export default function Header() {
               className="flex items-center gap-2 w-full px-4 py-3 text-sm rounded-md text-[#94a3b8] hover:text-white hover:bg-white/5 transition-colors"
             >
               <ThemeIcon theme={theme} />
-              <span>Theme: {THEME_LABELS[theme]} (tap to switch)</span>
+              <span>{THEME_LABELS[theme]}</span>
             </button>
           </div>
         </div>
