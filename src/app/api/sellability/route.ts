@@ -9,8 +9,8 @@ import {
 import nodemailer from "nodemailer";
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const FROM_EMAIL = process.env.FROM_EMAIL || "hello@retirewithoutselling.com";
-const TO_EMAIL = process.env.SELLABILITY_NOTIFICATION_EMAIL || "hello@retirewithoutselling.com";
+const FROM_EMAIL = process.env.FROM_EMAIL || "info@regenovate.com";
+const TO_EMAIL = process.env.SELLABILITY_NOTIFICATION_EMAIL || "bsa@regenovate.com";
 
 const SMTP_HOST = process.env.SMTP_HOST;
 const SMTP_PORT = parseInt(process.env.SMTP_PORT || "587");
@@ -106,7 +106,7 @@ function generateEmailHTML(data: SellabilityData): string {
   <div class="container">
     <div class="header">
       <h1>Business Sellability Assessment</h1>
-      <p>Build to Retire — Retire Without Selling</p>
+      <p>Build to Retire — Regenovate / Retire Without Selling</p>
     </div>
     <div class="content">
       <div class="score-box">
@@ -156,15 +156,15 @@ function generateEmailHTML(data: SellabilityData): string {
 
       <div class="cta">
         <h3 class="cta-title">${tier.cta}</h3>
-        <p class="cta-text">Book a confidential call to review these results with our team and discuss how we can support your exit journey.</p>
-        <a href="https://retirewithoutselling.vercel.app/contact" class="cta-button">Schedule Your Call</a>
+        <p class="cta-text">Book a confidential call to review these results with our team and discuss how Regenovate can support your exit or partnership journey.</p>
+        <a href="https://www.regenovate.com/contact" class="cta-button">Schedule Your Call</a>
       </div>
     </div>
     <div class="footer">
       <p class="footer-text">Confidential — prepared for ${data.name}${data.company ? `, ${data.company}` : ""}</p>
       <div class="footer-links">
-        <a href="https://retirewithoutselling.vercel.app">retirewithoutselling.vercel.app</a>
-        <a href="mailto:hello@retirewithoutselling.com">hello@retirewithoutselling.com</a>
+        <a href="https://retirewithoutselling.com">retirewithoutselling.com</a>
+        <a href="mailto:info@regenovate.com">info@regenovate.com</a>
       </div>
     </div>
   </div>
@@ -185,11 +185,11 @@ async function sendEmailWithSMTP(data: SellabilityData, html: string): Promise<v
 
   await transporter.verify();
   await transporter.sendMail({
-    from: `"Retire Without Selling" <${FROM_EMAIL}>`,
+    from: `"Regenovate" <${FROM_EMAIL}>`,
     to: [data.email, TO_EMAIL],
     subject: `Business Sellability Score — ${data.totalScore}/80`,
     html,
-    text: `Business Sellability Assessment\n\nOverall Score: ${data.totalScore}/80\n\n${categoryOrder.map((cat) => `${cat}: ${data.scores[cat] || 0}/${sellabilityCategoryConfig[cat]?.maxScore || 16}`).join("\n")}\n\nView full report at retirewithoutselling.vercel.app`,
+    text: `Business Sellability Assessment\n\nOverall Score: ${data.totalScore}/80\n\n${categoryOrder.map((cat) => `${cat}: ${data.scores[cat] || 0}/${sellabilityCategoryConfig[cat]?.maxScore || 16}`).join("\n")}\n\nView full report at retirewithoutselling.com`,
   });
 }
 
@@ -200,7 +200,7 @@ async function sendEmailWithResend(data: SellabilityData, html: string): Promise
     method: "POST",
     headers: { Authorization: `Bearer ${RESEND_API_KEY}`, "Content-Type": "application/json" },
     body: JSON.stringify({
-      from: `Retire Without Selling <${FROM_EMAIL}>`,
+      from: `Regenovate <${FROM_EMAIL}>`,
       to: [data.email, TO_EMAIL],
       subject: `Business Sellability Score — ${data.totalScore}/80`,
       html,

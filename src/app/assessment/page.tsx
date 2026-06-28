@@ -770,7 +770,7 @@ export default function SellabilityPage() {
 
               <div className="print-only print-footer">
                 <p>
-                  <strong>Retire Without Selling</strong> | retirewithoutselling.vercel.app | hello@retirewithoutselling.com<br />
+                  <strong>Retire Without Selling</strong> | retirewithoutselling.com | info@regenovate.com<br />
                   The Wellington, High Street, Uttoxeter, England, ST14 7JD<br />
                   This report is confidential and intended solely for {name}{company ? ` at ${company}` : ""}.
                 </p>
