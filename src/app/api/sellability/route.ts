@@ -225,18 +225,24 @@ export async function POST(req: NextRequest) {
     const html = generateEmailHTML(body);
 
     try {
+      let emailResult: { success: boolean; method: string; error?: string } = { success: false, method: "none" };
+      
       if (USE_SMTP && SMTP_USER && SMTP_PASS) {
         await sendEmailWithSMTP(body, html);
+        emailResult = { success: true, method: "smtp" };
       } else if (RESEND_API_KEY) {
         await sendEmailWithResend(body, html);
+        emailResult = { success: true, method: "resend" };
       } else {
         console.log("Sellability submission (no email configured):", { to: body.email, totalScore: body.totalScore });
+        emailResult = { success: false, method: "none", error: "No email provider configured" };
       }
-    } catch (emailError) {
+      
+      return NextResponse.json({ success: emailResult.success, method: emailResult.method, error: emailResult.error });
+    } catch (emailError: any) {
       console.error("Error sending sellability email:", emailError);
+      return NextResponse.json({ success: false, error: emailError.message || "Failed to send email" }, { status: 502 });
     }
-
-    return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Sellability API error:", error);
     return NextResponse.json({ error: "Failed to process assessment." }, { status: 500 });
